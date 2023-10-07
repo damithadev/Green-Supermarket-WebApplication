@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-<section class="bg-gray-50 pt-10">
+<section class="bg-gray-50">
     <div class="flex font-bold flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
             <h1>Logo here</h1>
