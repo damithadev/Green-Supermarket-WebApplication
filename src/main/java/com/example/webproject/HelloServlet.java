@@ -26,17 +26,18 @@ public class HelloServlet extends HttpServlet {
 //        out.println("</body></html>");
 //    }
 
+
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         System.out.println("Hello to the GET req from servlet");
 
         resp.setContentType("text/html");
 
         resp.getWriter().println("<h1>Hello there </h1>");
-
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         System.out.println("Hello to the POST req from servlet");
     }
+
 
 }
