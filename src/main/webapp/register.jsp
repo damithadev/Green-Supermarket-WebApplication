@@ -50,6 +50,7 @@
                 </form>
             </div>
         </div>
+        <p>${error}</p>
     </div>
 </section>
 </body>
