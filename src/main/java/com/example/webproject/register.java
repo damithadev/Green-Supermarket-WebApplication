@@ -7,19 +7,17 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 
-@WebServlet(name = "register", value = "/register")
+@WebServlet(name = "register", urlPatterns = "/register")
 public class register extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        System.out.println("Hello to the GET req from servlet");
-
-        resp.setContentType("text/html");
-
-        resp.getWriter().println("<h1>Hello there </h1>");
+       //send user from /register -->to  /register.jsp
+        getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        System.out.println("Hello to the POST req from servlet");
+        //handle POST Request from Registration Form
+        System.out.println("Request received");
     }
 
 
