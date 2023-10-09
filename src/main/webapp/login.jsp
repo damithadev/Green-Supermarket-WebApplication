@@ -13,7 +13,7 @@
 </head>
 <body>
 <section class="bg-gray-50">
-    <div class="flex font-bold flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
+    <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
             <h1>Logo here</h1>
 <%--            <img class="h-12 mr-2" src={headerLogo} alt="logo" />--%>
@@ -23,7 +23,7 @@
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
                     Log in to your account
                 </h1>
-                <form class="space-y-4 md:space-y-6" action="#">
+                <form method="post" class="space-y-4 md:space-y-6" action="/login">
                     <div>
                         <label
                                 for="email"
@@ -64,7 +64,6 @@
                                         aria-describedby="remember"
                                         type="checkbox"
                                         class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 "
-                                        required=""
                                 />
                             </div>
                             <div class="ml-3 text-sm">
@@ -88,7 +87,7 @@
                     </button>
                     <p class="text-sm font-light text-gray-500 ">
                         Don’t have an account yet?
-                        <a href="#"
+                        <a href="/register"
                               class="font-medium text-primary-600 hover:underline"
                         >
                         Sign up
