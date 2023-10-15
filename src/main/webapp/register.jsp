@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<%--Navbar code starts here--%>
 <nav class="bg-white  fixed w-full z-20 top-0 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/index.jsp" class="flex items-center">
@@ -44,6 +45,7 @@
         </div>
     </div>
 </nav>
+<%--Navbar code ends here--%>
 
 <%--Registration form starts here--%>
 <section class="bg-gray-50">
@@ -87,5 +89,6 @@
         <p>${error}</p>
     </div>
 </section>
+<%--Registration form ends here--%>
 </body>
 </html>

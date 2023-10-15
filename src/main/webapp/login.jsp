@@ -13,6 +13,7 @@
 </head>
 <body>
 
+<%--Navbar code starts here--%>
 <nav class="bg-white  fixed w-full z-20 top-0 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="/index.jsp" class="flex items-center">
@@ -44,12 +45,12 @@
         </div>
     </div>
 </nav>
+<%--Navbar code ends here--%>
 
 
 
 
-
-
+<%--Login form starts here--%>
 <section class="bg-gray-50">
     <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
@@ -136,5 +137,7 @@
         </div>
     </div>
 </section>
+<%--Login form starts here--%>
+
 </body>
 </html>

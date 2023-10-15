@@ -7,6 +7,7 @@
 </head>
 <body>
 
+<%--Navbar code starts here--%>
 <nav class="bg-white  fixed w-full z-20 top-0 left-0 border-b border-gray-200">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/index.jsp" class="flex items-center">
@@ -38,7 +39,7 @@
     </div>
   </div>
 </nav>
-
+<%--Navbar code ends here--%>
 <h1 class="text-center font-semibold mt-32 text-3xl">Home Page here</h1>
 <br/>
 
