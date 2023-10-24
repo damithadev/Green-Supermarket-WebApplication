@@ -21,7 +21,7 @@
 <%--top navbar ends--%>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white  fixed w-full z-20 top-10 left-0 border-b border-gray-200">
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
@@ -67,7 +67,7 @@
 
 <%--Login form starts here--%>
 <section class="bg-gray-50">
-    <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
+    <div class="flex flex-col items-center px-6 mx-auto lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
 <%--            <h1>Logo here</h1>--%>
             <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />

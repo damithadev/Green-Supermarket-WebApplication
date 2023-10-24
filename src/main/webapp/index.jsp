@@ -15,7 +15,7 @@
 <%--top navbar ends--%>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white  fixed w-full z-20 top-10 left-0 border-b border-gray-200">
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
     <%--      navbar Logo--%>
     <a href="/index.jsp" class="flex items-center">
