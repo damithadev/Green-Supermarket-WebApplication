@@ -17,7 +17,7 @@ public class register extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
        //send user from /register -->to  /register.jsp
-        getServletContext().getRequestDispatcher("/register1.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/verify.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
