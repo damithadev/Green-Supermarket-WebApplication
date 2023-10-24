@@ -19,7 +19,7 @@
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
     <%--      navbar Logo--%>
     <a href="/index.jsp" class="flex items-center">
-      <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
+      <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Green Supermarket Logo">
         <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
     </a>
 
