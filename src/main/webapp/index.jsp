@@ -15,10 +15,10 @@
 
 <%--Navbar code starts here--%>
 <nav class="bg-white  fixed w-full z-20 top-10 left-0 border-b border-gray-200">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
     <a href="/index.jsp" class="flex items-center">
-<%--      <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo">--%>
-      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>
+      <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
+<%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
     </a>
     <div class="flex md:order-2 gap-5">
       <a href="/login">
