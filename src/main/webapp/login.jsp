@@ -69,8 +69,8 @@
 <section class="bg-gray-50">
     <div class="flex flex-col items-center justify-center px-6 mx-auto md:h-screen lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
-            <h1>Logo here</h1>
-<%--            <img class="h-12 mr-2" src={headerLogo} alt="logo" />--%>
+<%--            <h1>Logo here</h1>--%>
+            <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
         </div>
         <div class="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
@@ -135,7 +135,7 @@
                     </div>
                     <button
                             type="submit"
-                            class="w-full text-white bg-[#023047] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                            class="w-full text-white bg-[#044A48] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                     >
                         Sign in
                     </button>
