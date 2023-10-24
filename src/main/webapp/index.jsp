@@ -16,16 +16,27 @@
 
 <%--Navbar code starts here--%>
 <nav class="bg-white  fixed w-full z-20 top-10 left-0 border-b border-gray-200">
-  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
+    <%--      navbar Logo--%>
     <a href="/index.jsp" class="flex items-center">
       <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
-<%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
+        <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
     </a>
-    <div class="flex md:order-2 gap-5">
+
+    <%-- navbar fant awsome icons--%>
+    <div class="flex md:order-2 gap-x-8">
+      <a href="/">
+          <i class="fa fa-shopping-cart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
+      </a>
+      <a href="/">
+          <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
+      </a>
       <a href="/login">
         <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
       </a>
     </div>
+
+    <%--navbar links--%>
     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
       <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
         <li>
