@@ -83,18 +83,24 @@
                 </p>
                 <form action="#">
                     <div class="grid grid-cols-2 gap-5">
-                        <input type="text" placeholder="Firstname" class="border border-gray-400 py-1 px-2">
-                        <input type="text" placeholder="Surname" class="border border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Firstname" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Surname" class="border rounded-lg border-gray-400 py-1 px-2">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full">
+                        <input type="text" placeholder="Address Line1" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
                     </div>
                     <div class="mt-5">
-                        <input type="password" placeholder="Password" class="border border-gray-400 py-1 px-2 w-full">
+                        <input type="text" placeholder="Address Line2" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
                     </div>
-                    <div class="mt-5">
-                        <input type="password" placeholder="Confirm Password" class="border border-gray-400 py-1 px-2 w-full">
+                    <div class="grid grid-cols-2 mt-5 gap-5">
+                        <input type="text" placeholder="Postal Code" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Mobile No" class="border rounded-lg border-gray-400 py-1 px-2">
                     </div>
+                    <div class="grid grid-cols-2 mt-5 gap-5">
+                        <input type="password" placeholder="Password" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <input type="password" placeholder="Confirm Password" class="border rounded-lg border-gray-400 py-1 px-2">
+                    </div>
+
                     <div class="mt-5">
                         <input type="checkbox" class="border border-gray-400">
                         <span>
@@ -102,7 +108,7 @@
                 </span>
                     </div>
                     <div class="mt-5">
-                        <button class="w-full bg-purple-500 py-3 text-center text-white">Register Now</button>
+                        <button class="w-full bg-[#044A48] rounded-lg py-3 text-center text-white">Register Now</button>
                     </div>
                 </form>
             </div>
