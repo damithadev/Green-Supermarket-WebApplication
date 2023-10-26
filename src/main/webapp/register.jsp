@@ -13,7 +13,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-
 <%--top navbar starts--%>
 <div class="bg-[#044A48] text-white py-2 text-center ">
     <p>Get 50% Off For Selected Items | Shop Now</p>
@@ -21,7 +20,7 @@
 <%--top navbar ends--%>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white  fixed w-full z-20 top-10 left-0 border-b border-gray-200">
+<nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Green Supermarket Logo">
@@ -62,48 +61,57 @@
 </nav>
 <%--Navbar code ends here--%>
 
-<%--Registration form starts here--%>
-<section class="bg-gray-50">
-    <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-        <a href="#" class="flex items-center pt-12 mb-6 text-3xl font-bold text-gray-900 ">
-            <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
-        </a>
-        <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
-            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
-                    Create an account
-                </h1>
-                <form method="post" class="space-y-4 md:space-y-6" action="/register">
-                    <div>
-                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
-                        <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@gmail.com" required="">
+
+<div class="min-h-screen py-16" style="background-image: linear-gradient(115deg, #9F7AEA, #FEE2FE)">
+    <div class="container mx-auto">
+        <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+
+
+            <div class="w-full lg:w-1/2 flex flex-col items-center justify-center p-12 bg-no-repeat bg-cover bg-red-900 bg-center">
+                <h1 class="text-white text-3xl mb-3">Welcome</h1>
+                <div>
+                    <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean suspendisse aliquam varius rutrum purus maecenas ac <a href="#" class="text-purple-500 font-semibold">Learn more</a></p>
+                </div>
+            </div>
+
+
+
+            <div class="w-full lg:w-1/2 py-16 px-12">
+                <h2  class="text-3xl mb-4">Register</h2>
+                <p class="mb-4">
+                    Create your account. It’s free and only take a minute
+                </p>
+                <form action="#">
+                    <div class="grid grid-cols-2 gap-5">
+                        <input type="text" placeholder="Firstname" class="border border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Surname" class="border border-gray-400 py-1 px-2">
                     </div>
-                    <div>
-                        <label for="password" class="block mb-2 text-sm font-medium text-gray-900">Password</label>
-                        <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                    <div class="mt-5">
+                        <input type="text" placeholder="Email" class="border border-gray-400 py-1 px-2 w-full">
                     </div>
-                    <div>
-                        <label for="confirmPassword" class="block mb-2 text-sm font-medium text-gray-900">Confirm password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                    <div class="mt-5">
+                        <input type="password" placeholder="Password" class="border border-gray-400 py-1 px-2 w-full">
                     </div>
-                    <div class="flex items-start">
-                        <div class="flex items-center h-5">
-                            <input id="terms" aria-describedby="terms" type="checkbox" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300" required="">
-                        </div>
-                        <div class="ml-3 text-sm">
-                            <label for="terms" class="font-light text-gray-500 ">I accept the <a class="font-medium text-primary-600 hover:underline" href="#">Terms and Conditions</a></label>
-                        </div>
+                    <div class="mt-5">
+                        <input type="password" placeholder="Confirm Password" class="border border-gray-400 py-1 px-2 w-full">
                     </div>
-                    <button type="submit" class="w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Create an account</button>
-                    <p class="text-sm font-light text-gray-500 ">
-                        Already have an account? <a href="/login" class="font-medium text-primary-600">Login here</a>
-                    </p>
+                    <div class="mt-5">
+                        <input type="checkbox" class="border border-gray-400">
+                        <span>
+                  I accept the <a href="#" class="text-purple-500 font-semibold">Terms of Use</a> &  <a href="#" class="text-purple-500 font-semibold">Privacy Policy</a>
+                </span>
+                    </div>
+                    <div class="mt-5">
+                        <button class="w-full bg-purple-500 py-3 text-center text-white">Register Now</button>
+                    </div>
                 </form>
             </div>
         </div>
-        <p>${error}</p>
     </div>
-</section>
-<%--Registration form ends here--%>
+</div>
+
+
+<p>${error}</p>
+
 </body>
 </html>
