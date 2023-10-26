@@ -73,7 +73,7 @@
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                     Enter your email to register
                 </h1>
-                <form method="post" class="space-y-4 md:space-y-6" action="/register">
+                <form method="post" class="space-y-4 md:space-y-6" action="/register.jsp">
                     <div>
                         <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
                         <div class="flex ">
