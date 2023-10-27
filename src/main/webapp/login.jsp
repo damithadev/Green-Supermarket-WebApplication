@@ -14,12 +14,6 @@
 </head>
 <body>
 
-<%--top navbar starts--%>
-<div class="bg-[#044A48] text-white py-2 text-center ">
-    <p>Get 50% Off For Selected Items | Shop Now</p>
-</div>
-<%--top navbar ends--%>
-
 <%--Navbar code starts here--%>
 <nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">

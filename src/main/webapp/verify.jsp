@@ -14,12 +14,6 @@
 </head>
 <body>
 
-<%--top navbar starts--%>
-<div class="bg-[#044A48] text-white py-2 text-center ">
-    <p>Get 50% Off For Selected Items | Shop Now</p>
-</div>
-<%--top navbar ends--%>
-
 <%--Navbar code starts here--%>
 <nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
@@ -68,7 +62,7 @@
         <a href="#" class="flex items-center mb-6 text-3xl font-bold text-gray-900 ">
             <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
         </a>
-        <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0">
+        <div class="w-full bg-white rounded-lg shadow md:mt-0 sm:max-w-md xl:p-0 shadow-lg overflow-hidden">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                 <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl">
                     Enter your email to register
