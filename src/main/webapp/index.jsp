@@ -8,6 +8,9 @@
 </head>
 <body>
 
+<%--adding background color to entire page--%>
+<div class="min-h-screen bg-[#99CC33]/[.06]">
+
 <%--top navbar starts--%>
 <div class="bg-[#044A48] text-white py-2 text-center ">
     <p>Get 50% Off For Selected Items | Shop Now</p>
@@ -15,7 +18,7 @@
 <%--top navbar ends--%>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
     <%--      navbar Logo--%>
     <a href="/index.jsp" class="flex items-center">
@@ -58,6 +61,8 @@
 <%--Navbar code ends here--%>
 <h1 class="text-center font-semibold mt-32 text-3xl">Home Page here</h1>
 <br/>
+</div>
+<%--background color ended--%>
 
 </body>
 </html>

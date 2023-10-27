@@ -14,8 +14,11 @@
 </head>
 <body>
 
+<%--adding background color to entire page--%>
+<div class="min-h-screen bg-[#99CC33]/[.06]">
+
 <%--Navbar code starts here--%>
-<nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200">
+<nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Green Supermarket Logo">
@@ -57,7 +60,7 @@
 <%--Navbar code ends here--%>
 
 <%--Registration form starts here--%>
-<section class="bg-gray-50">
+<section class="">
     <div class="flex flex-col items-center px-6 mx-auto lg:py-0">
         <a href="#" class="flex items-center mb-6 text-3xl font-bold text-gray-900 ">
             <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
@@ -99,5 +102,9 @@
     </div>
 </section>
 <%--Registration form ends here--%>
+
+</div>
+<%--background color ended--%>
+
 </body>
 </html>

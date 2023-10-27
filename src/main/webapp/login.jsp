@@ -14,8 +14,11 @@
 </head>
 <body>
 
+<%--adding background color to entire page--%>
+<div class="min-h-screen bg-[#99CC33]/[.06]">
+
 <%--Navbar code starts here--%>
-<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
@@ -56,14 +59,10 @@
 </nav>
 <%--Navbar code ends here--%>
 
-
-
-
 <%--Login form starts here--%>
-<section class="bg-gray-50">
+<section class="">
     <div class="flex flex-col items-center px-6 mx-auto lg:py-0">
         <div class="flex items-center mb-6 text-3xl text-gray-900">
-<%--            <h1>Logo here</h1>--%>
             <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
         </div>
         <div class="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
@@ -146,7 +145,9 @@
         </div>
     </div>
 </section>
-<%--Login form starts here--%>
+<%--Login form section ended here--%>
+</div>
+<%--background color ended--%>
 
 </body>
 </html>
