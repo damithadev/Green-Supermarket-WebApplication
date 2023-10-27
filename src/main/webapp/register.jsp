@@ -75,7 +75,7 @@
                             supermarket platform for organic <br>
                             vegetable & fruit buyers.</p>
                     </div>
-                    <div class="flex self-start pl-2 mt-20">
+                    <div class="flex self-start pl-4 mt-20">
                         <img src="Assets/img/3dcartt.png" class="h-44 " alt="3d cart">
                         <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
                     </div>
