@@ -72,15 +72,15 @@
 
             <%-- left side box --%>
             <div class="w-full lg:w-2/5  p-2 bg-no-repeat bg-cover bg-center bg-white" >
-                <div class="flex flex-col items-start rounded-xl p-10 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
+                <div class="flex flex-col items-start rounded-xl pl-14 pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
                         <h1 class="text-white text-3xl mb-10">Start Shopping <br> With Us.</h1>
                     <div>
                         <p class="text-white">Discover the world's best Green <br>
                             supermarket platform for organic <br>
                             vegetable & fruit buyers.</p>
                     </div>
-                    <div class="flex self-start pl-4 mt-20">
-                        <img src="Assets/img/3dcartt.png" class="h-44 " alt="3d cart">
+                    <div class="flex self-start pl-4 mb-8 mt-20">
+                        <img src="Assets/img/3dcart.png" class="h-44 " alt="3d cart">
                         <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
                     </div>
                 </div>
