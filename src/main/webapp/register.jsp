@@ -13,14 +13,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
+<%--adding background color to entire page--%>
+<div class="min-h-screen bg-[#99CC33]/[.06]">
+
 <%--top navbar starts--%>
-<div class="bg-[#044A48] text-white py-2 text-center ">
+<div class="z-10 bg-[#044A48] text-white py-2 text-center ">
     <p>Get 50% Off For Selected Items | Shop Now</p>
 </div>
 <%--top navbar ends--%>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200">
+<nav class="z-10 bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Green Supermarket Logo">
@@ -62,8 +66,8 @@
 <%--Navbar code ends here--%>
 
 <%--registration form starts here--%>
-<div class=" py-6 bg-[#99CC33]/[.06]">
-    <div class="container mx-auto">
+<div class="py-6">
+    <div class="container mx-auto z-10">
         <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
 
             <%-- left side box --%>
@@ -122,7 +126,8 @@
         </div>
     </div>
 </div>
-
+</div>
+<%--background color ended--%>
 
 <p>${error}</p>
 
