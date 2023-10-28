@@ -60,12 +60,12 @@
 <%--Navbar code ends here--%>
 
 <%--registration form starts here--%>
-<div class="py-6">
+<div class="py-8">
     <div class="container mx-auto z-10">
         <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
 
             <%-- left side box --%>
-            <div class="w-full lg:w-2/5  p-2 bg-no-repeat bg-cover bg-center bg-white" >
+            <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-white" >
                 <div class="flex flex-col items-start rounded-xl pl-14 pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
                         <h1 class="text-white text-3xl mb-10">Start Shopping <br> With Us.</h1>
                     <div>
@@ -73,7 +73,7 @@
                             supermarket platform for organic <br>
                             vegetable & fruit buyers.</p>
                     </div>
-                    <div class="flex self-start pl-4 mb-8 mt-20">
+                    <div class="flex self-start pl-4 mb-16 mt-20">
                         <img src="Assets/img/3dcart.png" class="h-44 " alt="3d cart">
                         <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
                     </div>
@@ -82,7 +82,7 @@
 
 
             <%-- right side box --%>
-            <div class="w-full lg:w-3/5 py-8 px-12">
+            <div class="w-full lg:w-3/5 py-12 px-12">
                 <h2  class="text-3xl mb-4">Register</h2>
                 <p class="mb-4">
                     Create your account. It’s free and only take a minute
