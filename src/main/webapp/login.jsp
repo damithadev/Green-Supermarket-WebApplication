@@ -66,16 +66,15 @@
 
                 <!-- <%-- left side box --%> -->
                 <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-white" >
-                    <div class="flex flex-col items-start rounded-xl  pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
+                    <div class="flex flex-col items-start rounded-xl pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
                         <div class="flex self-center">
                             <img src="Assets/img/whitelogo.png" class="h-8" alt="">
                         </div>
 
-                        <h1 class="text-white pl-14 text-2xl mt-10 mb-10">Discover fresh, eco-friendly <br>
-                            goods. Let’s verify your email for access.</h1>
+                        <h1 class="text-white self-center text-2xl mt-10 mb-10">Start Shopping With Us.</h1>
 
                         <div class="flex self-center mb-8 mt-2">
-                            <img src="Assets/img/verifycart.png" class="h-64" alt="3d cart">
+                            <img src="Assets/img/logincart.png" class="h-80" alt="3d cart">
                             <!-- <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%> -->
                         </div>
                     </div>
