@@ -91,7 +91,7 @@
                         Enter your email to register
                     </h1>
 
-                    <form method="post" action="/register" class="mt-8">
+                    <form method="post" action="/register.jsp" class="mt-8">
                         <div class="flex mb-8">
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-l-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 " placeholder="name@gmail.com" required="">
                             <button class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>

@@ -124,7 +124,7 @@
 
                         <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
                         <p class="self-end text-sm font-light text-gray-500 ">
-                            Don’t have an account yet? <a href="/register" class="font-medium text-primary-600">Login here</a>
+                            Don’t have an account yet? <a href="/register" class="font-medium text-primary-600">Signup</a>
                         </p>
                     </form>
                 </div>
