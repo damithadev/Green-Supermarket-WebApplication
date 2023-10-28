@@ -59,95 +59,59 @@
 </nav>
 <%--Navbar code ends here--%>
 
-<%--Login form starts here--%>
-<section class="">
-    <div class="flex flex-col items-center px-6 mx-auto lg:py-0">
-        <div class="flex items-center mb-6 text-3xl text-gray-900">
-            <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
-        </div>
-        <div class="w-full bg-white rounded-lg shadow  md:mt-0 sm:max-w-md xl:p-0 ">
-            <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl ">
-                    Log in to your account
-                </h1>
-                <form method="post" class="space-y-4 md:space-y-6" action="/login">
-                    <div>
-                        <label
-                                for="email"
-                                class="block mb-2 text-sm font-medium text-gray-900 e"
-                        >
-                            Your email
-                        </label>
-                        <input
-                                type="email"
-                                name="email"
-                                id="email"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
-                                placeholder="name@gmail.com"
-                                required=""
-                        />
-                    </div>
-                    <div>
-                        <label
-                                for="password"
-                                class="block mb-2 text-sm font-medium text-gray-900 "
-                        >
-                            Password
-                        </label>
-                        <input
-                                type="password"
-                                name="password"
-                                id="password"
-                                placeholder="••••••••"
-                                class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 "
-                                required=""
-                        />
-                    </div>
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start">
-                            <div class="flex items-center h-5">
-                                <input
-                                        id="remember"
-                                        aria-describedby="remember"
-                                        type="checkbox"
-                                        class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 "
-                                />
-                            </div>
-                            <div class="ml-3 text-sm">
-                                <label for="remember" class="text-gray-500 ">
-                                    Remember me
-                                </label>
-                            </div>
+    <!-- <%--login form starts here--%> -->
+    <div class="py-8">
+        <div class="container mx-auto z-10">
+            <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
+
+                <!-- <%-- left side box --%> -->
+                <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-white" >
+                    <div class="flex flex-col items-start rounded-xl  pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
+                        <div class="flex self-center">
+                            <img src="Assets/img/whitelogo.png" class="h-8" alt="">
                         </div>
-                        <a
-                                href="#"
-                                class="text-sm font-medium text-primary-600 hover:underline "
-                        >
-                            Forgot password?
-                        </a>
+
+                        <h1 class="text-white pl-14 text-2xl mt-10 mb-10">Discover fresh, eco-friendly <br>
+                            goods. Let’s verify your email for access.</h1>
+
+                        <div class="flex self-center mb-8 mt-2">
+                            <img src="Assets/img/verifycart.png" class="h-64" alt="3d cart">
+                            <!-- <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%> -->
+                        </div>
                     </div>
-                    <button
-                            type="submit"
-                            class="w-full text-white bg-[#044A48] hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
-                    >
-                        Sign in
-                    </button>
-                    <p class="text-sm font-light text-gray-500 ">
-                        Don’t have an account yet?
-                        <a href="/register"
-                              class="font-medium text-primary-600"
-                        >
-                        Sign up
-                        </a>
-                    </p>
-                </form>
+                </div>
+
+
+                <!-- <%-- right side box --%> -->
+                <div class="w-full lg:w-3/5 py-12 px-24">
+                    <div class="flex justify-center mb-6 text-3xl font-bold text-gray-900 ">
+                        <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
+                    </div>
+                    <h1 class="text-xl font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                        Enter your email to register
+                    </h1>
+
+                    <form method="post" action="/login" class="mt-8">
+                        <div class="flex mb-8">
+                            <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" placeholder="name@gmail.com" required="" />
+                        </div>
+                        <div class="mb-8">
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 " required="" />
+                        </div>
+
+                        <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Login</button>
+                        <p class="self-end text-sm font-light text-gray-500 ">
+                            Don’t have an account yet? <a href="/register" class="font-medium text-primary-600">Login here</a>
+                        </p>
+                    </form>
+                </div>
+                <!-- <%-- right side box ends here --%> -->
             </div>
         </div>
     </div>
-</section>
-<%--Login form section ended here--%>
+    <%--verification form ends here--%>
 </div>
-<%--background color ended--%>
+<!-- <%--background color ended--%> -->
 
 </body>
 </html>
