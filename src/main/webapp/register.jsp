@@ -83,14 +83,14 @@
 
             <%-- right side box --%>
             <div class="w-full lg:w-3/5 pt-10 px-12">
-                <h2  class="text-3xl mb-4">Register</h2>
+                <h2  class="text-3xl mb-4 font-medium">Register</h2>
                 <p class="mb-4">
                     Create your account. It’s free and only take a minute
                 </p>
                 <form action="#">
                     <div class="grid grid-cols-2 gap-5">
 
-                        <input type="text" placeholder="Firstname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" placeholder="First name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                         <input type="text" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="mt-5">
@@ -113,7 +113,7 @@
                         <span>I accept the <a href="#" class=" text-sm font-medium hover:underline font-light text-gray-500">Terms of Use</a> &  <a href="#" class="text-sm font-medium hover:underline font-light text-gray-500">Privacy Policy</a></span>
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-4">
-                        <button class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register Now</button>
+                        <button class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register</button>
                     </div>
                 </form>
             </div>
