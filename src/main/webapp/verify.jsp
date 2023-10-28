@@ -60,7 +60,7 @@
 <%--Navbar code ends here--%>
 
     <!-- <%--verification form starts here--%> -->
-    <div class="py-8">
+    <div class="py-12">
         <div class="container mx-auto z-10">
             <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
 
@@ -71,10 +71,10 @@
                             <img src="Assets/img/whitelogo.png" class="h-8" alt="">
                         </div>
 
-                        <h1 class="text-white pl-14 text-2xl mt-10 mb-10">Discover fresh, eco-friendly <br>
-                            goods. Let’s verify your email for access.</h1>
+                        <h1 class="text-white self-center text-xl mt-10">Discover fresh, eco-friendly goods.</h1>
+                        <h1 class="text-white self-center text-xl mb-10">Let’s verify your email for access.</h1>
 
-                        <div class="flex self-center mb-8 mt-2">
+                        <div class="flex self-center mb-10 mt-2">
                             <img src="Assets/img/verifycart.png" class="h-64" alt="3d cart">
                             <!-- <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%> -->
                         </div>
