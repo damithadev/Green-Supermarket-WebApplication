@@ -89,22 +89,23 @@
                 </p>
                 <form action="#">
                     <div class="grid grid-cols-2 gap-5">
-                        <input type="text" placeholder="Firstname" class="border rounded-lg border-gray-400 py-1 px-2">
-                        <input type="text" placeholder="Surname" class="border rounded-lg border-gray-400 py-1 px-2">
+
+                        <input type="text" placeholder="Firstname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Address Line1" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
+                        <input type="text" placeholder="Address Line1" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Address Line2" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
+                        <input type="text" placeholder="Address Line2" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="grid grid-cols-2 mt-5 gap-5">
-                        <input type="text" placeholder="Postal Code" class="border rounded-lg border-gray-400 py-1 px-2">
-                        <input type="text" placeholder="Mobile No" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <input type="text" placeholder="Postal Code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" placeholder="Mobile No" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-5 gap-5">
-                        <input type="password" placeholder="Password" class="border rounded-lg border-gray-400 py-1 px-2">
-                        <input type="password" placeholder="Confirm Password" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <input type="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="password" placeholder="Confirm Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
 
                     <div class="mt-5">
