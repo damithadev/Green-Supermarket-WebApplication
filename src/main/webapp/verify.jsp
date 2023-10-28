@@ -83,42 +83,27 @@
 
 
                 <!-- <%-- right side box --%> -->
-                <div class="w-full lg:w-3/5 py-12 px-12">
-                    <h2  class="text-3xl mb-4">Register</h2>
-                    <p class="mb-4">
-                        Create your account. It’s free and only take a minute
-                    </p>
-                    <form method="post" action="/register.jsp">
-                        <div class="flex ">
+                <div class="w-full lg:w-3/5 py-12 px-24">
+                    <div class="flex justify-center mb-6 text-3xl font-bold text-gray-900 ">
+                            <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
+                    </div>
+                    <h1 class="text-xl font-semibold leading-tight tracking-tight text-gray-900 md:text-2xl">
+                        Enter your email to register
+                    </h1>
+
+                    <form method="post" action="/register.jsp" class="mt-8">
+                        <div class="flex mb-8">
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-l-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 " placeholder="name@gmail.com" required="">
                             <button class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
                         </div>
-                        <div class="grid grid-cols-2 gap-5">
-                            <input type="text" placeholder="Firstname" class="border rounded-lg border-gray-400 py-1 px-2">
-                            <input type="text" placeholder="Surname" class="border rounded-lg border-gray-400 py-1 px-2">
-                        </div>
-                        <div class="mt-5">
-                            <input type="text" placeholder="Address Line1" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
-                        </div>
-                        <div class="mt-5">
-                            <input type="text" placeholder="Address Line2" class="border rounded-lg border-gray-400 py-1 px-2 w-full">
-                        </div>
-                        <div class="grid grid-cols-2 mt-5 gap-5">
-                            <input type="text" placeholder="Postal Code" class="border rounded-lg border-gray-400 py-1 px-2">
-                            <input type="text" placeholder="Mobile No" class="border rounded-lg border-gray-400 py-1 px-2">
-                        </div>
-                        <div class="grid grid-cols-2 mt-5 gap-5">
-                            <input type="password" placeholder="Password" class="border rounded-lg border-gray-400 py-1 px-2">
-                            <input type="password" placeholder="Confirm Password" class="border rounded-lg border-gray-400 py-1 px-2">
+                        <div class="mb-8">
+                            <input type="password" name="password" id="password" placeholder="••••••••" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
                         </div>
 
-                        <div class="mt-5">
-                            <input type="checkbox" class="border border-gray-400">
-                            <span>I accept the <a href="#" class=" font-semibold">Terms of Use</a> &  <a href="#" class=" font-semibold">Privacy Policy</a></span>
-                        </div>
-                        <div class="grid grid-cols-2 mt-8 gap-4">
-                            <button class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register Now</button>
-                        </div>
+                        <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue</button>
+                        <p class="self-end text-sm font-light text-gray-500 ">
+                            Already have an account? <a href="/login" class="font-medium text-primary-600">Login here</a>
+                        </p>
                     </form>
                 </div>
                 <!-- <%-- right side box ends here --%> -->
