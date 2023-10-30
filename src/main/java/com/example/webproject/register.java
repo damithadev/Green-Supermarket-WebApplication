@@ -17,14 +17,21 @@ public class register extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
        //send user from /register -->to  /register.jsp
-        getServletContext().getRequestDispatcher("/verify.jsp").forward(req, resp);
+        getServletContext().getRequestDispatcher("/register.jsp").forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         //handle POST Request from Registration Form
-        String email = req.getParameter("email");
+//        String email = req.getParameter("email");
+        String email = "damitha@gmail.com";
+        String fname = req.getParameter("fname");
+        String lname = req.getParameter("lname");
+        String add1 = req.getParameter("add1");
+        String add2 = req.getParameter("add2");
+        String pcode = req.getParameter("pcode");
+        String mobile = req.getParameter("mobile");
         String password = req.getParameter("password");
-        String conPassword = req.getParameter("confirmPassword");
+        String conPassword = req.getParameter("conPassword");
 
         if (!password.equalsIgnoreCase(conPassword)) {
             req.setAttribute("error", "Passwords do not match! ");
@@ -37,10 +44,16 @@ public class register extends HttpServlet {
 
             try {
                 connection = dbConnection.getConnection();
-                String sql = "INSERT INTO user (email, password) VALUES (?, ?)";
+                String sql = "INSERT INTO user (email, fname, lname, add1, add2, pcode, mobile, psw) VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
                 statement = connection.prepareStatement(sql);
                 statement.setString(1, email);
-                statement.setString(2, password);
+                statement.setString(2, fname);
+                statement.setString(3, lname);
+                statement.setString(4, add1);
+                statement.setString(5, add2);
+                statement.setString(6, pcode);
+                statement.setString(7, mobile);
+                statement.setString(8, password);
 
                 int rowsInserted = statement.executeUpdate();
 

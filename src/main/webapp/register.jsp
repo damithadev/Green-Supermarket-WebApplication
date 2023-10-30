@@ -87,25 +87,24 @@
                 <p class="mb-4">
                     Create your account. It’s free and only take a minute
                 </p>
-                <form action="#">
+                <form method="post" action="/register">
                     <div class="grid grid-cols-2 gap-5">
-
-                        <input type="text" placeholder="First name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
-                        <input type="text" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="fname" id="fname" placeholder="First name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="lname" id="lname" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Address Line1" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                        <input type="text" name="add1" id="add1" placeholder="Address Line1" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="mt-5">
-                        <input type="text" placeholder="Address Line2" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                        <input type="text" name="add2" id="add2" placeholder="Address Line2" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="grid grid-cols-2 mt-5 gap-5">
-                        <input type="text" placeholder="Postal Code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
-                        <input type="text" placeholder="Mobile No" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="pcode" id="pcode" placeholder="Postal Code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="mobile" id="mobile" placeholder="Mobile No" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-5 gap-5">
-                        <input type="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
-                        <input type="password" placeholder="Confirm Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="password" name="password" id="password" placeholder="Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="password" name="conPassword" id="conPassword" placeholder="Confirm Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
 
                     <div class="mt-5">
@@ -113,7 +112,7 @@
                         <span>I accept the <a href="#" class=" text-sm font-medium hover:underline font-light text-gray-500">Terms of Use</a> &  <a href="#" class="text-sm font-medium hover:underline font-light text-gray-500">Privacy Policy</a></span>
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-4">
-                        <button class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register</button>
+                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register</button>
                     </div>
                 </form>
             </div>
