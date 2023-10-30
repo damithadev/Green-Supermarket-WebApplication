@@ -1,0 +1,44 @@
+package com.example.webproject;
+
+import java.io.*;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+
+
+@WebServlet(name = "verify", value = "/verify")
+public class verify extends HttpServlet {
+
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //send user from /verify -->to  /verify.jsp
+        getServletContext().getRequestDispatcher("/verify.jsp").forward(req, resp);
+    }
+
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+        String email = req.getParameter("email");
+
+        if (isValidEmail(email)) {
+            HttpSession session = req.getSession();
+            session.setAttribute("userEmail", email);
+
+            // Redirect to the "register.jsp" page to capture additional information.
+            resp.sendRedirect("register.jsp");
+        } else {
+            System.out.println("Email is not valid");
+            // Email is not valid; you can handle this case, e.g., by showing an error message.
+            // You may choose to return to the "verify.jsp" page for correction or take other appropriate actions.
+        }
+    }
+
+    private boolean isValidEmail(String email) {
+        if (email.equals("damitha@gmail.com")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+}

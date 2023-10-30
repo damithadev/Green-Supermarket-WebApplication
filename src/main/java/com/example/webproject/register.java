@@ -22,8 +22,9 @@ public class register extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
         //handle POST Request from Registration Form
-//        String email = req.getParameter("email");
-        String email = "damitha@gmail.com";
+
+        HttpSession session = req.getSession();
+        String email = (String) session.getAttribute("userEmail");
         String fname = req.getParameter("fname");
         String lname = req.getParameter("lname");
         String add1 = req.getParameter("add1");
