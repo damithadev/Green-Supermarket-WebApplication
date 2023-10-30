@@ -27,6 +27,7 @@ public class verify extends HttpServlet {
             resp.sendRedirect("register.jsp");
         } else {
             System.out.println("Email is not valid");
+            resp.sendRedirect("failed.jsp");
             // Email is not valid; you can handle this case, e.g., by showing an error message.
             // You may choose to return to the "verify.jsp" page for correction or take other appropriate actions.
         }
