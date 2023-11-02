@@ -26,7 +26,6 @@ public class verify extends HttpServlet {
 
         if (isValidEmail(userEnteredOTP, sentOTP)) {
 
-
             // Redirect to the "register.jsp" page to capture additional information.
             resp.sendRedirect("register.jsp");
         } else {
