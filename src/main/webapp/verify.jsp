@@ -91,20 +91,22 @@
                         Enter your email to register
                     </h1>
 
-                    <form method="post" action="/verify" class="mt-8">
+                    <form method="post" action="/sendOtp" class="mt-8">
                         <div class="flex mb-8">
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-l-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 " placeholder="name@gmail.com" required="">
-                            <button id="sendOTPButton" class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
+                            <button type="submit" id="sendOTPButton" class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
                         </div>
+                    </form>
+                    <form method="post" action="/verify">
                         <div class="mb-8">
-                            <input type="text" name="otp" id="otp" placeholder="OTP" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                            <input type="text" name="userEnteredOtp" id="userEnteredOtp" placeholder="OTP" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
                         </div>
-
                         <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue</button>
+                    </form>
                         <p class="self-end text-sm font-light text-gray-500 ">
                             Already have an account? <a href="/login" class="font-medium text-primary-600">Login here</a>
                         </p>
-                    </form>
+
                 </div>
                 <!-- <%-- right side box ends here --%> -->
             </div>
