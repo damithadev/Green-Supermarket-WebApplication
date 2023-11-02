@@ -28,9 +28,9 @@ public class verify extends HttpServlet {
         }
         //end
 
-        if (isValidEmail(email)) {
+        if (isValidEmail(recipientEmail)) {
             HttpSession session = req.getSession();
-            session.setAttribute("userEmail", email);
+            session.setAttribute("userEmail", recipientEmail);
 
             // Redirect to the "register.jsp" page to capture additional information.
             resp.sendRedirect("register.jsp");
