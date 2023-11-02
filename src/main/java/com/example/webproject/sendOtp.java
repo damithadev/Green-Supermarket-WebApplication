@@ -24,7 +24,7 @@ public class sendOtp extends HttpServlet {
         HttpSession HTsession = req.getSession();
         HTsession.setAttribute("userOTP", otp);
 
-        //get user entered email from the javascript AJAX Request
+        //get user entered email address
         String recipientEmail = req.getParameter("email");
 
         //added line start

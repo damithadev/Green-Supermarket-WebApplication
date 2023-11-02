@@ -94,7 +94,7 @@
                     <form method="post" action="/sendOtp" class="mt-8">
                         <div class="flex mb-8">
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-l-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 " placeholder="name@gmail.com" required="">
-                            <button type="submit" id="sendOTPButton" class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
+                            <button type="submit" class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
                         </div>
                     </form>
                     <form method="post" action="/verify">
@@ -106,7 +106,6 @@
                         <p class="self-end text-sm font-light text-gray-500 ">
                             Already have an account? <a href="/login" class="font-medium text-primary-600">Login here</a>
                         </p>
-
                 </div>
                 <!-- <%-- right side box ends here --%> -->
             </div>
@@ -116,28 +115,5 @@
 </div>
 <!-- <%--background color ended--%> -->
 
-
-<script>
-    document.getElementById("sendOTPButton").addEventListener("click", function () {
-        // Retrieve the user's email address from an input field (e.g., with id "email").
-        var email = document.getElementById("email").value;
-
-        // Make an AJAX request to your "verify.java" servlet.
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "test2", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Handle the response from the servlet (e.g., show a success message).
-                var response = xhr.responseText;
-                console.log(response); // You can log the response to the browser's console for testing.
-            }
-        };
-
-        // Send the email data to the servlet.
-        var data = "email=" + email;
-        xhr.send(data);
-    });
-</script>
 </body>
 </html>
