@@ -48,6 +48,12 @@
           <artifactId>javax.mail-api</artifactId>
           <version>1.6.2</version> <!-- Adjust the version as needed -->
       </dependency>
+    <!--  related to email sending-->
+      <dependency>
+          <groupId>com.sun.mail</groupId>
+          <artifactId>javax.mail</artifactId>
+          <version>1.6.2</version>
+      </dependency>
 
   </dependencies>
 

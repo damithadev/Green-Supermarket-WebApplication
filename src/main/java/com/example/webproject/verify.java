@@ -19,6 +19,14 @@ public class verify extends HttpServlet {
 
         String email = req.getParameter("email");
 
+        //added line start
+        try {
+            EmailSender.sendEmail(email, "Your OTP", "Your OTP code is: 123456"); // Replace with your OTP code
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //end
+
         if (isValidEmail(email)) {
             HttpSession session = req.getSession();
             session.setAttribute("userEmail", email);
@@ -34,7 +42,7 @@ public class verify extends HttpServlet {
     }
 
     private boolean isValidEmail(String email) {
-        if (email.equals("damitha@gmail.com")) {
+        if (email.equals("hellodamitha@gmail.com")) {
             return true;
         } else {
             return false;
