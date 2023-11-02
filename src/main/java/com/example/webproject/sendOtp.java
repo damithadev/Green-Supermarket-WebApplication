@@ -22,10 +22,13 @@ public class sendOtp extends HttpServlet {
 
         // Store the OTP in the session
         HttpSession HTsession = req.getSession();
-        HTsession.setAttribute("userOTP", otp);
+        HTsession.setAttribute("sentOTP", otp);
 
         //get user entered email address
         String recipientEmail = req.getParameter("email");
+
+        // Store the Email in the session
+        HTsession.setAttribute("userEmail", recipientEmail);
 
         //added line start
         try {

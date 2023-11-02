@@ -99,7 +99,7 @@
                     </form>
                     <form method="post" action="/verify">
                         <div class="mb-8">
-                            <input type="text" name="userEnteredOtp" id="userEnteredOtp" placeholder="OTP" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
+                            <input type="text" name="userEnteredOTP" id="userEnteredOTP" placeholder="OTP" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5" required="">
                         </div>
                         <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue</button>
                     </form>
