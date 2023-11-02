@@ -17,11 +17,12 @@ public class verify extends HttpServlet {
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String email = req.getParameter("email");
+        //get user entered email from the javascript AJAX Request
+        String recipientEmail = req.getParameter("email");
 
         //added line start
         try {
-            EmailSender.sendEmail(email, "Your OTP", "Your OTP code is: 123456"); // Replace with your OTP code
+            EmailSender.sendEmail(recipientEmail, "Your OTP", "Your OTP code is: 123456"); // Replace with your OTP code
         } catch (Exception e) {
             e.printStackTrace();
         }

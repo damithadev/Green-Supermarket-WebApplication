@@ -23,14 +23,20 @@ public class EmailSender {
             }
         });
 
-        // Create a message
-        Message message = new MimeMessage(session);
-        message.setFrom(new InternetAddress("techpulselk@gmail.com")); // Replace with your email
-        message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail));
-        message.setSubject(subject);
-        message.setText(messageBody);
+        try {
+            // Create a message
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress("techpulselk@gmail.com")); // Replace with your email
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail));
+            message.setSubject(subject);
+            message.setText(messageBody);
 
-        // Send the message
-        Transport.send(message);
+            // Send the message
+            Transport.send(message);
+        }catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Email sending failed. Check the server logs for details.");
+        }
+
     }
 }
