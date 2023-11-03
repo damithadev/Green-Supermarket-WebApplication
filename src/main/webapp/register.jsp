@@ -109,7 +109,7 @@
 
                     <div class="mt-5">
                         <input type="checkbox" class="border border-gray-400">
-                        <span>I accept the <a href="#" class=" text-sm font-medium hover:underline font-light text-gray-500">Terms of Use</a> &  <a href="#" class="text-sm font-medium hover:underline font-light text-gray-500">Privacy Policy</a></span>
+                        <span class="font-light">I accept the <a href="#" class=" text-sm font-medium hover:underline font-light text-gray-500">Terms of Use</a> &  <a href="#" class="text-sm font-medium hover:underline font-light text-gray-500">Privacy Policy</a></span>
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-4">
                         <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Register</button>
