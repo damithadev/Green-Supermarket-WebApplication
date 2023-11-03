@@ -3,6 +3,7 @@ package com.example.webproject;
 import java.io.*;
 import java.util.Random;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -30,13 +31,16 @@ public class sendOtp extends HttpServlet {
         // Store the Email in the session
         HTsession.setAttribute("userEmail", recipientEmail);
 
-        //added line start
+        //sending email
         try {
             EmailSender.sendEmail(recipientEmail, "Green Supermarket Verification OTP", "Your OTP code is: " + otp); // Replace with your OTP code
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //end
+
+        // Forward the request back to verify.jsp
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/verify.jsp");
+        dispatcher.forward(req, resp);
     }
 
     private String generateRandomOTP() {
