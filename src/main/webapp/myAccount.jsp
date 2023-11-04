@@ -78,31 +78,31 @@
         </a>
         <ul class="space-y-2 font-medium pt-10" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
         <li>
-            <button class="flex items-center p-2 w-full text-gray-900 rounded-lg hover:bg-gray-100 group" id="profile-tab" data-tabs-target="#profile" type="button" role="tab">
+            <button class="flex items-center p-2 w-full text-gray-900 rounded-lg group" id="profile-tab" data-tabs-target="#profile" type="button" role="tab">
             <!-- add svg to here -->
-            <span class="ml-3">Dashboard</span>
+            <span class="ml-3 ">Dashboard</span>
             </button>
         </li>
         <li>
-            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg  group" id="dashboard-tab" data-tabs-target="#dashboardd" type="button" role="tab">
+            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg group" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab">
                 <!-- add svg to here -->
                 <span class="ml-3">Orders</span>
             </button>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="account-tab" data-tabs-target="#account" type="button" role="tab">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Account Details</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="address-tab" data-tabs-target="#address" type="button" role="tab">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Delivery Address</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="wishlist-tab" data-tabs-target="#wishlist" type="button" role="tab">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Wishlist</span>
             </a>
@@ -195,8 +195,26 @@
 
 
 
-    <div class="hidden" id="dashboardd" role="tabpanel">
+    <div class="hidden" id="dashboard" role="tabpanel">
         <div class="min-h-screen bg-blue-500">
+            <p class="text-lg text-gray-800 text-center">Orders</p>
+        </div>
+    </div>
+
+    <div class="hidden" id="account" role="tabpanel">
+        <div class="min-h-screen bg-red-500">
+            <p class="text-lg text-gray-800 text-center">Orders</p>
+        </div>
+    </div>
+
+    <div class="hidden" id="address" role="tabpanel">
+        <div class="min-h-screen bg-green-500">
+            <p class="text-lg text-gray-800 text-center">Orders</p>
+        </div>
+    </div>
+
+    <div class="hidden" id="wishlist" role="tabpanel">
+        <div class="min-h-screen bg-purple-500">
             <p class="text-lg text-gray-800 text-center">Orders</p>
         </div>
     </div>
