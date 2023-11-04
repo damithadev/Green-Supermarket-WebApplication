@@ -21,7 +21,7 @@
 
 
 <nav class="fixed top-0 z-20 w-full bg-white border-b border-gray-200">
-    <div class="px-3 py-3 lg:px-5 lg:pl-3">
+    <div class="px-3 py-2 lg:px-5 lg:pl-2 bg-gray-100">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start">
                 <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
@@ -78,39 +78,39 @@
         </a>
         <ul class="space-y-2 font-medium pt-10" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
         <li>
-            <button class="flex items-center p-2 w-full text-gray-900 rounded-lg group" id="profile-tab" data-tabs-target="#profile" type="button" role="tab">
+            <button class="flex items-center p-2 w-full text-gray-900 rounded-lg group" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab">
             <!-- add svg to here -->
-            <span class="ml-3 ">Dashboard</span>
+            <span class="ml-3 text-gray-900">Dashboard</span>
             </button>
         </li>
         <li>
-            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg group" id="dashboard-tab" data-tabs-target="#dashboard" type="button" role="tab">
+            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg group" id="orders-tab" data-tabs-target="#orders" type="button" role="tab">
                 <!-- add svg to here -->
-                <span class="ml-3">Orders</span>
+                <span class="ml-3 text-gray-900">Orders</span>
             </button>
         </li>
         <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="account-tab" data-tabs-target="#account" type="button" role="tab">
                 <!-- add svg to here -->
-                <span class="flex-1 ml-3 whitespace-nowrap">Account Details</span>
+                <span class="text-gray-900 ml-3">Account Details</span>
             </a>
         </li>
         <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="address-tab" data-tabs-target="#address" type="button" role="tab">
                 <!-- add svg to here -->
-                <span class="flex-1 ml-3 whitespace-nowrap">Delivery Address</span>
+                <span class="text-gray-900 ml-3">Delivery Address</span>
             </a>
         </li>
         <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group" id="wishlist-tab" data-tabs-target="#wishlist" type="button" role="tab">
                 <!-- add svg to here -->
-                <span class="flex-1 ml-3 whitespace-nowrap">Wishlist</span>
+                <span class="text-gray-900 ml-3">Wishlist</span>
             </a>
         </li>
         <li>
             <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
                 <!-- add svg to here -->
-                <span class="flex-1 ml-3 whitespace-nowrap">Sign out</span>
+                <span class="text-gray-900 ml-3 ">Sign out</span>
             </a>
         </li>
         </ul>
@@ -120,7 +120,7 @@
 
 <div id="default-tab-content">
 
-    <div class="p-4 sm:ml-64 hidden mt-16" id="profile" role="tabpanel">
+    <div class="p-4 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
             <div class="grid grid-cols-3 gap-4 mb-4">
 
@@ -140,7 +140,7 @@
                     </p>
                 </div>
                 <div class="flex items-center justify-center h-24 rounded bg-gray-100">
-                    <p class="text-2xl text-gray-4">
+                    <p class="text-2xl text-gray-400">
                         <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
                         </svg>
@@ -195,7 +195,7 @@
 
 
 
-    <div class="hidden" id="dashboard" role="tabpanel">
+    <div class="hidden" id="orders" role="tabpanel">
         <div class="min-h-screen bg-blue-500">
             <p class="text-lg text-gray-800 text-center">Orders</p>
         </div>
@@ -232,15 +232,16 @@
             // Get the data-tabs-target attribute to identify the clicked tab
             const target = button.getAttribute('data-tabs-target');
 
-            // Remove the 'bg-blue-500' class from all tab buttons
+            // Remove the 'bg-white' class from all tab buttons
             tabButtons.forEach(tabButton => {
                 tabButton.classList.remove('bg-[#f8fafc]');
             });
 
-            // Add the 'bg-blue-500' class to the clicked tab
+            // Add the 'bg-white' class to the clicked tab
             button.classList.add('bg-[#f8fafc]');
         });
     });
 </script>
+
 </body>
 </html>
