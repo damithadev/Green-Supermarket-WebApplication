@@ -15,7 +15,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 
 <%--Navbar code starts here--%>
-<nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Green Supermarket Logo">
@@ -75,9 +75,9 @@
 
 
 
-<aside id="default-sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
+<aside id="default-sidebar" class="fixed top-0 left-0 z-10 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
     <div class="h-full px-3 py-4 overflow-y-auto bg-gray-200">
-        <ul class="space-y-2 font-medium" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+        <ul class="space-y-2 font-medium pt-20" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
         <li>
             <button class="flex items-center p-2 w-full text-gray-900 rounded-lg hover:bg-gray-100 group" id="profile-tab" data-tabs-target="#profile" type="button" role="tab">
             <!-- add svg to here -->
