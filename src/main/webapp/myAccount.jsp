@@ -120,11 +120,11 @@
 
 <div id="default-tab-content">
 
+<%-----------    dashboard tab starts--%>
     <div class="p-4 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+            <!-- 3 columns -->
             <div class="grid grid-cols-3 gap-4 mb-4">
-
-                <!-- 3 columns -->
                 <div class="flex items-center justify-center h-24 rounded bg-gray-100">
                     <p class="text-2xl text-gray-400">
                         <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
@@ -194,28 +194,79 @@
     </div>
 
 
-
-    <div class="hidden" id="orders" role="tabpanel">
-        <div class="min-h-screen bg-blue-500">
-            <p class="text-lg text-gray-800 text-center">Orders</p>
+<%----------------------    orders tab starts--%>
+    <div class="hidden p-4 sm:ml-64 hidden mt-16" id="orders" role="tabpanel">
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+            <!-- single column -->
+            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">
+                <p class="text-2xl text-gray-400">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                    </svg>
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="hidden" id="account" role="tabpanel">
-        <div class="min-h-screen bg-red-500">
-            <p class="text-lg text-gray-800 text-center">Orders</p>
+<%-----------    account tab starts here--%>
+    <div class="hidden p-4 sm:ml-64 hidden mt-16" id="account" role="tabpanel">
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+            <!-- 2 columns 2 sets-->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <!-- 2 column 1su set -->
+                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
+                    <p class="text-2xl text-gray-400">
+                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                        </svg>
+                    </p>
+                </div>
+                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
+                    <p class="text-2xl text-gray-400">
+                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="hidden" id="address" role="tabpanel">
-        <div class="min-h-screen bg-green-500">
-            <p class="text-lg text-gray-800 text-center">Orders</p>
+<%-------------    delivery tab starts here--%>
+    <div class="hidden p-4 sm:ml-64 hidden mt-16" id="address" role="tabpanel">
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+            <!-- 2 columns 2 sets-->
+            <div class="grid grid-cols-2 gap-4 mb-4">
+                <!-- 2 column 1su set -->
+                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
+                    <p class="text-2xl text-gray-400">
+                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                        </svg>
+                    </p>
+                </div>
+                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
+                    <p class="text-2xl text-gray-400">
+                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                        </svg>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="hidden" id="wishlist" role="tabpanel">
-        <div class="min-h-screen bg-purple-500">
-            <p class="text-lg text-gray-800 text-center">Orders</p>
+<%-------------    wishlist tab starts here--%>
+    <div class="hidden p-4 sm:ml-64 hidden mt-16" id="wishlist" role="tabpanel">
+        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+            <!-- single column -->
+            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">
+                <p class="text-2xl text-gray-400">
+                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
+                    </svg>
+                </p>
+            </div>
         </div>
     </div>
 
