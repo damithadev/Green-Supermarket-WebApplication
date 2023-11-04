@@ -84,31 +84,31 @@
             </button>
         </li>
         <li>
-            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg hover:bg-gray-100 group" id="dashboard-tab" data-tabs-target="#dashboardd" type="button" role="tab">
+            <button class="flex items-center w-full p-2 text-gray-900 rounded-lg  group" id="dashboard-tab" data-tabs-target="#dashboardd" type="button" role="tab">
                 <!-- add svg to here -->
                 <span class="ml-3">Orders</span>
             </button>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  group">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Account Details</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg  group">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Delivery Address</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Wishlist</span>
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg hover:bg-gray-100 group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
                 <!-- add svg to here -->
                 <span class="flex-1 ml-3 whitespace-nowrap">Sign out</span>
             </a>
@@ -202,5 +202,27 @@
     </div>
 
 </div> <!-- main tab div tag ends -->
+
+<!-- JavaScript -->
+<script>
+    // Get all the tab buttons
+    const tabButtons = document.querySelectorAll('[role="tab"]');
+
+    // Add click event listeners to each tab button
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Get the data-tabs-target attribute to identify the clicked tab
+            const target = button.getAttribute('data-tabs-target');
+
+            // Remove the 'bg-blue-500' class from all tab buttons
+            tabButtons.forEach(tabButton => {
+                tabButton.classList.remove('bg-[#f8fafc]');
+            });
+
+            // Add the 'bg-blue-500' class to the clicked tab
+            button.classList.add('bg-[#f8fafc]');
+        });
+    });
+</script>
 </body>
 </html>
