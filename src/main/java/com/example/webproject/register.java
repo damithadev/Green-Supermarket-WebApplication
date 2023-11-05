@@ -60,7 +60,7 @@ public class register extends HttpServlet {
 
                 if (rowsInserted > 0) {
                     // Insertion was successful
-                    resp.sendRedirect("success.jsp");
+                    resp.sendRedirect("myAccount.jsp");
                 } else {
                     // Insertion failed
                     resp.sendRedirect("failed.jsp");
