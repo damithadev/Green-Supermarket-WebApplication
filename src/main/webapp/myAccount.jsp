@@ -243,12 +243,89 @@
     <div class="hidden p-4 sm:ml-64 hidden mt-16" id="orders" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
             <!-- single column -->
-            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">
-                <p class="text-2xl text-gray-400">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                    </svg>
-                </p>
+            <div class="flex  justify-center h-96 mb-4 rounded bg-gray-100">
+
+
+                <div class="relative w-full rounded-xl overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Item name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Category
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                G/Kg
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Tomatoes
+                            </th>
+                            <td class="px-6 py-4">
+                                Vegetable
+                            </td>
+                            <td class="px-6 py-4">
+                                500
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 500
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Grapes
+                            </th>
+                            <td class="px-6 py-4">
+                                Fruit
+                            </td>
+                            <td class="px-6 py-4">
+                                200
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 700
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Onion
+                            </th>
+                            <td class="px-6 py-4">
+                                Vegetable
+                            </td>
+                            <td class="px-6 py-4">
+                                250
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 450
+                            </td>
+                        </tr>
+                        <tr class="bg-white ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Apple
+                            </th>
+                            <td class="px-6 py-4">
+                                Fruit
+                            </td>
+                            <td class="px-6 py-4">
+                                2
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 150
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
             </div>
         </div>
     </div>
@@ -317,12 +394,89 @@
     <div class="hidden p-4 sm:ml-64 hidden mt-16" id="wishlist" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
             <!-- single column -->
-            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">
-                <p class="text-2xl text-gray-400">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                    </svg>
-                </p>
+            <div class="flex  justify-center h-96 mb-4 rounded bg-gray-100">
+
+
+                <div class="relative w-full rounded-xl overflow-x-auto">
+                    <table class="w-full text-sm text-left text-gray-500 ">
+                        <thead class="text-xs text-gray-700 uppercase bg-gray-200">
+                        <tr>
+                            <th scope="col" class="px-6 py-3">
+                                Item name
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Category
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                G/Kg
+                            </th>
+                            <th scope="col" class="px-6 py-3">
+                                Price
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Tomatoes
+                            </th>
+                            <td class="px-6 py-4">
+                                Vegetable
+                            </td>
+                            <td class="px-6 py-4">
+                                500
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 500
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Grapes
+                            </th>
+                            <td class="px-6 py-4">
+                                Fruit
+                            </td>
+                            <td class="px-6 py-4">
+                                200
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 700
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Onion
+                            </th>
+                            <td class="px-6 py-4">
+                                Vegetable
+                            </td>
+                            <td class="px-6 py-4">
+                                250
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 450
+                            </td>
+                        </tr>
+                        <tr class="bg-white ">
+                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap ">
+                                Apple
+                            </th>
+                            <td class="px-6 py-4">
+                                Fruit
+                            </td>
+                            <td class="px-6 py-4">
+                                2
+                            </td>
+                            <td class="px-6 py-4">
+                                Rs. 150
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
             </div>
         </div>
     </div>
