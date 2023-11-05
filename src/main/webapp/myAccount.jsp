@@ -124,72 +124,84 @@
 <%-----------    dashboard tab starts--%>
     <div class="p-4 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
+
             <!-- 3 columns -->
-            <div class="grid grid-cols-3 gap-4 mb-4">
-                <div class="flex items-center justify-center h-24 rounded bg-gray-100">
-                    <p class="text-2xl text-center text-gray-400">
-                        <img src="Assets/img/order.png" class="h-16" alt="Green Supermarket Logo">
-                        Order
-                    </p>
+            <div class="grid grid-cols-3 mx-20 gap-40 mb-4">
+                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/order.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Total Orders
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-[#044A48] text-7xl">25</h2>
                 </div>
-                <div class="flex items-center justify-center h-24 rounded bg-gray-100">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
+                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/heart.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Wishlist Items
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-[#044A48] text-7xl">08</h2>
                 </div>
-                <div class="flex items-center justify-center h-24 rounded bg-gray-100">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
+                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/money.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Total Spent
+                        </p>
+                    </div>
+                    <div class="flex mt-3">
+                        <h2 class="font-semibold mt-3 mr-2 text-[#044A48] text-xl">Rs.</h2>
+                        <h2 class="font-semibold text-[#044A48] text-4xl">10,500</h2>
+                    </div>
+
                 </div>
             </div>
 
-            <!-- single column -->
-            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">
-                <p class="text-2xl text-gray-400">
-                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                    </svg>
-                </p>
-            </div>
+<%--            <!-- single column -->--%>
+<%--            <div class="flex items-center justify-center h-48 mb-4 rounded bg-gray-100">--%>
+<%--                <p class="text-2xl text-gray-400">--%>
+<%--                    <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">--%>
+<%--                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>--%>
+<%--                    </svg>--%>
+<%--                </p>--%>
+<%--            </div>--%>
 
-            <!-- 2 columns 2 sets-->
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <!-- 2 column 1su set -->
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-                <!-- 2 column 2nd set -->
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-            </div>
+<%--            <!-- 2 columns 2 sets-->--%>
+<%--            <div class="grid grid-cols-2 gap-4 mb-4">--%>
+<%--                <!-- 2 column 1su set -->--%>
+<%--                <div class="flex items-center justify-center rounded bg-gray-100 h-28">--%>
+<%--                    <p class="text-2xl text-gray-400">--%>
+<%--                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">--%>
+<%--                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>--%>
+<%--                        </svg>--%>
+<%--                    </p>--%>
+<%--                </div>--%>
+<%--                <div class="flex items-center justify-center rounded bg-gray-100 h-28">--%>
+<%--                    <p class="text-2xl text-gray-400">--%>
+<%--                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">--%>
+<%--                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>--%>
+<%--                        </svg>--%>
+<%--                    </p>--%>
+<%--                </div>--%>
+<%--                <!-- 2 column 2nd set -->--%>
+<%--                <div class="flex items-center justify-center rounded bg-gray-100 h-28">--%>
+<%--                    <p class="text-2xl text-gray-400">--%>
+<%--                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">--%>
+<%--                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>--%>
+<%--                        </svg>--%>
+<%--                    </p>--%>
+<%--                </div>--%>
+<%--                <div class="flex items-center justify-center rounded bg-gray-100 h-28">--%>
+<%--                    <p class="text-2xl text-gray-400">--%>
+<%--                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">--%>
+<%--                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>--%>
+<%--                        </svg>--%>
+<%--                    </p>--%>
+<%--                </div>--%>
+<%--            </div>--%>
         </div>
     </div>
 
