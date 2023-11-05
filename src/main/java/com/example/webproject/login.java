@@ -30,7 +30,7 @@ public class login extends HttpServlet {
 
         try {
             connection = dbConnection.getConnection();
-            String sql = "SELECT * FROM user WHERE email = ? AND password = ?";
+            String sql = "SELECT * FROM user WHERE email = ? AND psw = ?";
             statement = connection.prepareStatement(sql);
             statement.setString(1, email);
             statement.setString(2, password);
@@ -39,7 +39,7 @@ public class login extends HttpServlet {
 
             if (resultSet.next()) {
                 // Login successful, user exists in the database
-                resp.sendRedirect("success.jsp");
+                resp.sendRedirect("myAccount.jsp");
             } else {
                 // Login failed, user doesn't exist or password is incorrect
                 resp.sendRedirect("failed.jsp");
@@ -57,8 +57,6 @@ public class login extends HttpServlet {
             }
         }
     }
-
-
-    }
+}
 
 
