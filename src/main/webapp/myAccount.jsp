@@ -257,7 +257,6 @@
     <div class="hidden p-4 sm:ml-64 hidden mt-16" id="account" role="tabpanel">
         <div class="p-2 border-2 border-gray-200 border-dashed rounded-lg bg-gray-100">
 
-
             <div class="w-full lg:w-3/5 pt-10 pb-10 px-12 bg-gray-100">
                 <h2 class="text-2xl mb-10 font-medium">Your account details are here,</h2>
                 <p class="mb-8">
@@ -277,7 +276,7 @@
                         <input type="password" name="newPassword" id="newPassword" placeholder="New Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-10 gap-4">
-                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white"> Update</button>
+                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Update</button>
                     </div>
                 </form>
             </div>
@@ -286,27 +285,31 @@
         </div>
     </div>
 
-<%-------------    delivery tab starts here--%>
+<%-------------    address tab starts here--%>
     <div class="hidden p-4 sm:ml-64 hidden mt-16" id="address" role="tabpanel">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
-            <!-- 2 columns 2 sets-->
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <!-- 2 column 1su set -->
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
+        <div class="p-4 border-2 border-gray-200 border-dashed bg-gray-100 rounded-lg">
+
+            <div class="w-full lg:w-3/5 pt-10 pb-10 px-12 bg-gray-100">
+                <h2 class="text-2xl mb-10 font-medium">Your delivery address is here,</h2>
+                <p class="mb-8">
+                    Your shipping destination, your choice. Modify your address.
+                </p>
+                <form method="post" action="/">
+                    <div class="mt-5">
+                        <input type="text" name="add1" id="add1" placeholder="Address Line1" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                    </div>
+                    <div class="mt-5">
+                        <input type="text" name="add2" id="add2" placeholder="Address Line2" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                    </div>
+                    <div class="grid grid-cols-2 mt-8 gap-5">
+                        <input type="text" name="postal" id="postal" placeholder="Postal Code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                    </div>
+                    <div class="grid grid-cols-2 mt-10 gap-4">
+                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Update</button>
+                    </div>
+                </form>
             </div>
+
         </div>
     </div>
 
