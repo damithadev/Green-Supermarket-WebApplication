@@ -122,30 +122,30 @@
 <div id="default-tab-content">
 
 <%-----------    dashboard tab starts--%>
-    <div class="p-4 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
+    <div class="px-4 pt-2 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
-
+            <h2 class="text-2xl mb-10 ml-5 font-medium">Hello, Damitha Jayatharaka!</h2>
             <!-- 3 columns -->
-            <div class="grid grid-cols-3 mx-20 gap-40 mb-4">
-                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+            <div class="grid grid-cols-3 mx-20 gap-40 mb-20">
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
                         <img src="Assets/img/order.png" class="h-8 mr-3" alt="Green Supermarket Logo">
                         <p class="text-2xl font-medium text-center text-gray-600">
                             Total Orders
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-7xl">25</h2>
+                    <h2 class="font-semibold text-[#044A48] text-6xl">25</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
                         <img src="Assets/img/heart.png" class="h-8 mr-3" alt="Green Supermarket Logo">
                         <p class="text-2xl font-medium text-center text-gray-600">
                             Wishlist Items
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-7xl">08</h2>
+                    <h2 class="font-semibold text-[#044A48] text-6xl">08</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-52 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
                         <img src="Assets/img/money.png" class="h-8 mr-3" alt="Green Supermarket Logo">
                         <p class="text-2xl font-medium text-center text-gray-600">
@@ -156,7 +156,40 @@
                         <h2 class="font-semibold mt-3 mr-2 text-[#044A48] text-xl">Rs.</h2>
                         <h2 class="font-semibold text-[#044A48] text-4xl">10,500</h2>
                     </div>
+                </div>
+            </div>
 
+            <!-- 3 columns -->
+            <div class="grid grid-cols-3 mx-20 gap-40 mb-4">
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/order.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Total Orders
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-[#044A48] text-6xl">25</h2>
+                </div>
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/heart.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Wishlist Items
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-[#044A48] text-6xl">08</h2>
+                </div>
+                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/money.png" class="h-8 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-2xl font-medium text-center text-gray-600">
+                            Total Spent
+                        </p>
+                    </div>
+                    <div class="flex mt-3">
+                        <h2 class="font-semibold mt-3 mr-2 text-[#044A48] text-xl">Rs.</h2>
+                        <h2 class="font-semibold text-[#044A48] text-4xl">10,500</h2>
+                    </div>
                 </div>
             </div>
 
@@ -222,25 +255,40 @@
 
 <%-----------    account tab starts here--%>
     <div class="hidden p-4 sm:ml-64 hidden mt-16" id="account" role="tabpanel">
-        <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
-            <!-- 2 columns 2 sets-->
-            <div class="grid grid-cols-2 gap-4 mb-4">
-                <!-- 2 column 1su set -->
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
-                <div class="flex items-center justify-center rounded bg-gray-100 h-28">
-                    <p class="text-2xl text-gray-400">
-                        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 1v16M1 9h16"/>
-                        </svg>
-                    </p>
-                </div>
+        <div class="p-2 border-2 border-gray-200 border-dashed rounded-lg">
+
+
+            <div class="w-full lg:w-3/5 pt-10 px-12 bg-gray-100">
+                <h2 class="text-3xl mb-4 font-medium">Your account details are here,</h2>
+                <p class="mb-4">
+                    Create your account. It’s free and only take a minute
+                </p>
+                <form method="post" action="/register">
+                    <div class="grid grid-cols-2 gap-5">
+                        <input type="text" name="fname" id="fname" placeholder="First name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="lname" id="lname" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                    </div>
+                    <div class="grid grid-cols-2 mt-5 gap-5">
+                        <input type="text" name="email" id="email" placeholder="Email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="mobile" id="mobile" placeholder="Mobile No" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                    </div>
+
+                    <div class="grid grid-cols-2 mt-5 gap-5">
+                        <input type="password" name="oldPassword" id="oldPassword" placeholder="Old Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="password" name="newPassword" id="newPassword" placeholder="New Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                    </div>
+
+                    <div class="mt-5">
+                        <input type="checkbox" class="border border-gray-400">
+                        <span class="font-light">I accept the <a href="#" class=" text-sm font-medium hover:underline font-light text-gray-500">Terms of Use</a> &  <a href="#" class="text-sm font-medium hover:underline font-light text-gray-500">Privacy Policy</a></span>
+                    </div>
+                    <div class="grid grid-cols-2 mt-8 gap-4">
+                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white"> Update</button>
+                    </div>
+                </form>
             </div>
+
+
         </div>
     </div>
 
