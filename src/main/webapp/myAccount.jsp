@@ -126,29 +126,29 @@
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
             <h2 class="text-2xl mb-10 ml-5 font-medium">Hello, Damitha Jayatharaka!</h2>
             <!-- 3 columns -->
-            <div class="grid grid-cols-3 mx-20 gap-40 mb-20">
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+            <div class="grid grid-cols-3 mx-20 gap-44 mb-20">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/order.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/order.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Total Orders
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-6xl">25</h2>
+                    <h2 class="font-semibold text-[#044A48] text-5xl">25</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/heart.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/heart.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Wishlist Items
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-6xl">08</h2>
+                    <h2 class="font-semibold text-[#044A48] text-5xl">08</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/money.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/money.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Total Spent
                         </p>
                     </div>
@@ -160,29 +160,29 @@
             </div>
 
             <!-- 3 columns -->
-            <div class="grid grid-cols-3 mx-20 gap-40 mb-4">
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+            <div class="grid grid-cols-3 mx-20 gap-44 mb-20">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/order.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/order.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Total Orders
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-6xl">25</h2>
+                    <h2 class="font-semibold text-[#044A48] text-5xl">25</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/heart.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/heart.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Wishlist Items
                         </p>
                     </div>
-                    <h2 class="font-semibold text-[#044A48] text-6xl">08</h2>
+                    <h2 class="font-semibold text-[#044A48] text-5xl">08</h2>
                 </div>
-                <div class="flex flex-col items-center pt-10 h-48 rounded-xl shadow-xl bg-gray-100">
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/money.png" class="h-8 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-2xl font-medium text-center text-gray-600">
+                        <img src="Assets/img/money.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
                             Total Spent
                         </p>
                     </div>
