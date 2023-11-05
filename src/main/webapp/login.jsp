@@ -15,14 +15,13 @@
 <body>
 
 <%--adding background color to entire page--%>
-<div class="min-h-screen bg-[#99CC33]/[.06]">
+<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
 
 <%--Navbar code starts here--%>
 <nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
         <a href="/index.jsp" class="flex items-center">
             <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
-            <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%>
         </a>
 
         <%-- navbar fant awsome icons--%>
@@ -65,7 +64,7 @@
             <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
 
                 <!-- <%-- left side box --%> -->
-                <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-white" >
+                <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-gray-100" >
                     <div class="flex flex-col items-start rounded-xl pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
                         <div class="flex self-center">
                             <img src="Assets/img/whitelogo.png" class="h-8" alt="">
@@ -75,14 +74,13 @@
 
                         <div class="flex self-center mb-8 mt-2">
                             <img src="Assets/img/logincart.png" class="h-80" alt="3d cart">
-                            <!-- <%--      <span class="self-center text-2xl font-semibold whitespace-nowrap ">Logo</span>--%> -->
                         </div>
                     </div>
                 </div>
 
 
                 <!-- <%-- right side box --%> -->
-                <div class="w-full lg:w-3/5 py-12 px-24">
+                <div class="w-full lg:w-3/5 py-12 px-24 bg-gray-100">
                     <div class="flex justify-center mb-6 text-3xl font-bold text-gray-900 ">
                         <img class="h-15 mr-2" src="/Assets/img/Logo.svg" alt="logo" />
                     </div>
@@ -127,7 +125,8 @@
         </div>
     </div>
     <%--login form ends here--%>
-</div>
+
+<%--</div>--%>
 <!-- <%--background color ended--%> -->
 
 </body>

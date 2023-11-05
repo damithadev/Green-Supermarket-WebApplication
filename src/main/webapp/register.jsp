@@ -15,7 +15,7 @@
 <body>
 
 <%--adding background color to entire page--%>
-<div class="min-h-screen bg-[#99CC33]/[.06]">
+<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
 
 <%--Navbar code starts here--%>
 <nav class="z-10 bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
@@ -65,7 +65,7 @@
         <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
 
             <%-- left side box --%>
-            <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-white" >
+            <div class="w-full lg:w-2/5 p-2 bg-no-repeat bg-cover bg-center bg-gray-100" >
                 <div class="flex flex-col items-start rounded-xl pl-14 pt-12 bg-gradient-to-b from-[#044A48] to-[#0A2827]/[0.7]">
                         <h1 class="text-white text-3xl mb-10">Start Shopping <br> With Us.</h1>
                     <div>
@@ -82,7 +82,7 @@
 
 
             <%-- right side box --%>
-            <div class="w-full lg:w-3/5 pt-10 px-12">
+            <div class="w-full lg:w-3/5 pt-10 px-12 bg-gray-100">
                 <h2  class="text-3xl mb-4 font-medium">Register</h2>
                 <p class="mb-4">
                     Create your account. It’s free and only take a minute
@@ -120,7 +120,8 @@
         </div>
     </div>
 </div>
-</div>
+
+<%--</div>--%>
 <%--background color ended--%>
 
 <p>${error}</p>

@@ -18,10 +18,11 @@
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 
-
+<%--adding background color to entire page--%>
+<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
 
 <nav class="fixed top-0 z-20 w-full bg-white border-b border-gray-200">
-    <div class="px-3 py-2 lg:px-5 lg:pl-2 bg-gray-100">
+    <div class="px-3 py-2 lg:px-5 lg:pl-2">
         <div class="flex items-center justify-between">
             <div class="flex items-center justify-start">
                 <button data-drawer-target="logo-sidebar" data-drawer-toggle="logo-sidebar" aria-controls="logo-sidebar" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg sm:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
@@ -108,9 +109,9 @@
             </a>
         </li>
         <li>
-            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group">
+            <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg group hover:bg-gray-100">
                 <!-- add svg to here -->
-                <span class="text-gray-900 ml-3 ">Sign out</span>
+                <span class="text-gray-900 ml-3">Sign out</span>
             </a>
         </li>
         </ul>
@@ -293,6 +294,6 @@
         });
     });
 </script>
-
+<%-- </div>  entire pg bg color--%>
 </body>
 </html>

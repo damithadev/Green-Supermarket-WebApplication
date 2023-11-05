@@ -9,7 +9,7 @@
 <body>
 
 <%--adding background color to entire page--%>
-<div class="min-h-screen bg-[#99CC33]/[.06]">
+<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
 
 <%--top navbar starts--%>
 <div class="bg-[#044A48] text-white py-2 text-center ">
@@ -61,7 +61,8 @@
 <%--Navbar code ends here--%>
 <h1 class="text-center font-semibold mt-32 text-3xl">Home Page here</h1>
 <br/>
-</div>
+
+<%--</div>--%>
 <%--background color ended--%>
 
 </body>
