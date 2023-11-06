@@ -44,10 +44,10 @@
                     <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded shadow" id="dropdown-user">
                         <div class="px-4 py-3" role="none">
                             <p class="text-sm text-gray-900" role="none">
-                                Damitha Jayatharaka
+                                <%= request.getAttribute("fname") %> <%= request.getAttribute("surname") %>
                             </p>
                             <p class="text-sm font-medium text-gray-900 truncate" role="none">
-                                damitha@gmail.com
+                                <%= request.getAttribute("email") %>
                             </p>
                         </div>
                         <ul class="py-1" role="none">
@@ -124,7 +124,7 @@
 <%-----------    dashboard tab starts--%>
     <div class="px-4 pt-2 sm:ml-64 hidden mt-16" id="dashboard" role="tabpanel">
         <div class="p-4 border-2 border-gray-200 border-dashed rounded-lg">
-            <h2 class="text-2xl mb-10 ml-5 font-medium">Hello, Damitha Jayatharaka!</h2>
+            <h2 class="text-2xl mb-10 ml-5 font-medium">Hello, <%= request.getAttribute("fname") %> <%= request.getAttribute("surname") %>!</h2>
             <!-- 3 columns -->
             <div class="grid grid-cols-3 mx-20 gap-44 mb-20">
                 <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
