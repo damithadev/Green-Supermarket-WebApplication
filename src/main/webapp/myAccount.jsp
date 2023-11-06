@@ -339,7 +339,7 @@
                 <p class="mb-8">
                     Make sure your account reflects you. Modify your profile details.
                 </p>
-                <form method="post" action="/">
+                <form name="userInfo" method="post" action="/updateUserData">
                     <div class="grid grid-cols-2 gap-5">
                         <input type="text" name="fname" id="fname" placeholder="First name" value="<%= request.getAttribute("fname") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                         <input type="text" name="lname" id="lname" placeholder="Surname" value="<%= request.getAttribute("surname") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
@@ -353,7 +353,7 @@
                         <input type="password" name="newPassword" id="newPassword" placeholder="New Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-10 gap-4">
-                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Update</button>
+                        <input type="submit" name="userInfoSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">
                     </div>
                 </form>
             </div>
@@ -371,7 +371,7 @@
                 <p class="mb-8">
                     Your shipping destination, your choice. Modify your address.
                 </p>
-                <form method="post" action="/">
+                <form name="userAdd" method="post" action="/updateUserData">
                     <div class="mt-8">
                         <input type="text" name="add1" id="add1" placeholder="Address Line1" value="<%= request.getAttribute("add1") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
