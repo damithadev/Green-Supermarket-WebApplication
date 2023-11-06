@@ -341,12 +341,12 @@
                 </p>
                 <form method="post" action="/">
                     <div class="grid grid-cols-2 gap-5">
-                        <input type="text" name="fname" id="fname" placeholder="First name" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
-                        <input type="text" name="lname" id="lname" placeholder="Surname" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="fname" id="fname" placeholder="First name" value="<%request.getAttribute("fname"); %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="lname" id="lname" placeholder="Surname" value="<%request.getAttribute("surname"); %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-5">
-                        <input type="text" name="email" id="email" placeholder="Email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
-                        <input type="text" name="mobile" id="mobile" placeholder="Mobile No" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="email" id="email" placeholder="Email" value="<%request.getAttribute("email"); %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="mobile" id="mobile" placeholder="Mobile No" value="<%request.getAttribute("mobile"); %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-5">
                         <input type="password" name="oldPassword" id="oldPassword" placeholder="Old Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">

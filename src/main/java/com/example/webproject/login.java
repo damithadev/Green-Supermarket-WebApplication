@@ -39,7 +39,11 @@ public class login extends HttpServlet {
 
             if (resultSet.next()) {
                 // Login successful, user exists in the database
-                resp.sendRedirect("myAccount.jsp");
+
+                // Store the Email in the session
+                HttpSession HTsession = req.getSession();
+                HTsession.setAttribute("userEmail", email);
+                resp.sendRedirect("/myAcc");
             } else {
                 // Login failed, user doesn't exist or password is incorrect
                 resp.sendRedirect("failed.jsp");
