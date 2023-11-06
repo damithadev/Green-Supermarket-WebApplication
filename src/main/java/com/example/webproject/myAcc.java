@@ -25,6 +25,9 @@ public class myAcc extends HttpServlet {
         String fname = "";
         String surname = "";
         String mobile = "";
+        String add1 = "";
+        String add2 = "";
+        String pcode = "";
 
         // Database connection
         Connection connection = null;
@@ -33,7 +36,7 @@ public class myAcc extends HttpServlet {
             connection = dbConnection.getConnection();
 
             // SQL query to retrieve user details based on email
-            String query = "SELECT fname, lname, mobile FROM user WHERE email = ?";
+            String query = "SELECT fname, lname, mobile, add1, add2, pcode FROM user WHERE email = ?";
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             preparedStatement.setString(1, userEmail);
 
@@ -43,6 +46,9 @@ public class myAcc extends HttpServlet {
                 fname = resultSet.getString("fname");
                 surname = resultSet.getString("lname");
                 mobile = resultSet.getString("mobile");
+                add1 = resultSet.getString("add1");
+                add2 = resultSet.getString("add2");
+                pcode = resultSet.getString("pcode");
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -62,6 +68,9 @@ public class myAcc extends HttpServlet {
         req.setAttribute("surname", surname);
         req.setAttribute("email", userEmail);
         req.setAttribute("mobile", mobile);
+        req.setAttribute("add1", add1);
+        req.setAttribute("add2", add2);
+        req.setAttribute("pcode", pcode);
 
         // Forward the request to the "accDetails.jsp" page
         RequestDispatcher dispatcher = req.getRequestDispatcher("myAccount.jsp");

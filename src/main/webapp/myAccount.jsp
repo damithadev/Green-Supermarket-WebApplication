@@ -373,13 +373,13 @@
                 </p>
                 <form method="post" action="/">
                     <div class="mt-8">
-                        <input type="text" name="add1" id="add1" placeholder="Address Line1" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                        <input type="text" name="add1" id="add1" placeholder="Address Line1" value="<%= request.getAttribute("add1") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="mt-8">
-                        <input type="text" name="add2" id="add2" placeholder="Address Line2" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
+                        <input type="text" name="add2" id="add2" placeholder="Address Line2" value="<%= request.getAttribute("add2") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5 w-full">
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-5">
-                        <input type="text" name="postal" id="postal" placeholder="Postal Code" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+                        <input type="text" name="postal" id="postal" placeholder="Postal Code" value="<%= request.getAttribute("pcode") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-10 gap-4">
                         <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Update</button>
