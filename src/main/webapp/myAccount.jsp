@@ -382,7 +382,7 @@
                         <input type="text" name="postal" id="postal" placeholder="Postal Code" value="<%= request.getAttribute("pcode") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-10 gap-4">
-                        <button type="submit" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">Update</button>
+                        <input type="submit" name="userAddSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">
                     </div>
                 </form>
             </div>
