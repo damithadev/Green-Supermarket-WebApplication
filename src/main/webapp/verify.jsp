@@ -112,7 +112,7 @@
                         <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Continue</button>
                     </form>
                         <p class="self-end text-sm font-light text-gray-500 ">
-                            Already have an account? <a href="/login" class="font-medium text-primary-600">Login here</a>
+                            Already have an account? <a href="/login" class="font-medium text-primary-600">Login</a>
                         </p>
                 </div>
                 <!-- <%-- right side box ends here --%> -->
