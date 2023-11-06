@@ -79,7 +79,7 @@ public class updateUserData extends HttpServlet {
 
             String add1 = req.getParameter("add1");
             String add2 = req.getParameter("add2");
-            String pcode = req.getParameter("pcode");
+            String pcode = req.getParameter("postal");
 
             // Database connection
             Connection connection = null;
