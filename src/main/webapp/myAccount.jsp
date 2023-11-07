@@ -525,7 +525,15 @@
             if (xhr.readyState === 4 && xhr.status === 200) {
                 // Handle the response from the servlet (if needed)
                 var response = xhr.responseText;
-                console.log(response); // Log the response to the console
+
+                // Check the response and redirect as needed
+                if (response === "success") {
+                    // Redirect to "index.jsp"
+                    window.location.href = "index.jsp";
+                } else {
+                    // Handle other responses or errors
+                    console.log(response);
+                }
             }
         };
         // Send the request (you can include data if needed)

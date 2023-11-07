@@ -2,20 +2,22 @@ package com.example.webproject;
 
 import java.io.*;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @WebServlet(name = "updateUserData", value = "/updateUserData")
 public class updateUserData extends HttpServlet {
 
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
+        // Forward the request to the "accDetails.jsp" page
+        RequestDispatcher dispatcher = req.getRequestDispatcher("myAccount.jsp");
+        dispatcher.forward(req, resp);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
