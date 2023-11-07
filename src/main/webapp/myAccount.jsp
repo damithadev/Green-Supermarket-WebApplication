@@ -354,7 +354,7 @@
                     </div>
                     <div class="flex mt-10 gap-10">
                         <input type="submit" name="userInfoSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 cursor-pointer text-center text-white">
-                        <button type="button" name="deleteBtn" value="Delete Account" class="w-36 bg-red-800 hover:bg-red-900 rounded-lg py-2 text-center text-white">Delete Account</button>
+                        <button type="button" name="deleteBtn" id="deleteBtn" class="w-36 bg-red-800 hover:bg-red-900 rounded-lg py-2 text-center text-white">Delete Account</button>
                     </div>
                 </form>
             </div>
@@ -486,6 +486,8 @@
 
 <!-- JavaScript -->
 <script>
+
+    // Js script for change the active tab on sidebar
     // Get all the tab buttons
     const tabButtons = document.querySelectorAll('[role="tab"]');
 
@@ -504,6 +506,35 @@
             button.classList.add('bg-[#f8fafc]');
         });
     });
+
+
+
+    // JS code for trigger the click event from the delete button
+    document.getElementById("deleteBtn").addEventListener("click", function() {
+        // Create an XMLHttpRequest object
+        var xhr = new XMLHttpRequest();
+
+        // Define the method and URL for the AJAX request
+        xhr.open("POST", "deleteUserAcc", true);
+
+        // Set the content type for the request (if needed)
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+
+        // Define the callback function to handle the server's response
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Handle the response from the servlet (if needed)
+                var response = xhr.responseText;
+                console.log(response); // Log the response to the console
+            }
+        };
+        // Send the request (you can include data if needed)
+        xhr.send();
+    });
+
+
+
+
 </script>
 <%-- </div>  entire pg bg color--%>
 </body>
