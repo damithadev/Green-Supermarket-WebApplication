@@ -66,7 +66,7 @@ public class retrieveUserData extends HttpServlet {
         // Set the retrieved details as request attributes
         req.setAttribute("fname", fname);
         req.setAttribute("surname", surname);
-        req.setAttribute("email", userEmail);
+     //req.setAttribute("email", userEmail);
         req.setAttribute("mobile", mobile);
         req.setAttribute("add1", add1);
         req.setAttribute("add2", add2);

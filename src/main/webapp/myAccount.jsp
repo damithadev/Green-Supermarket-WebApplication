@@ -345,15 +345,16 @@
                         <input type="text" name="lname" id="lname" placeholder="Surname" value="<%= request.getAttribute("surname") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-5">
-                        <input type="text" name="email" id="email" placeholder="Email" value="<%= request.getAttribute("email") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
+<%--                        <input type="text" name="email" id="email" placeholder="Email" value="<%= request.getAttribute("email") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">--%>
                         <input type="text" name="mobile" id="mobile" placeholder="Mobile No" value="<%= request.getAttribute("mobile") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-8 gap-5">
                         <input type="password" name="oldPassword" id="oldPassword" placeholder="Old Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                         <input type="password" name="newPassword" id="newPassword" placeholder="New Password" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
-                    <div class="grid grid-cols-2 mt-10 gap-4">
-                        <input type="submit" name="userInfoSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">
+                    <div class="flex mt-10 gap-10">
+                        <input type="submit" name="userInfoSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 cursor-pointer text-center text-white">
+                        <button type="button" name="deleteBtn" value="Delete Account" class="w-36 bg-red-800 hover:bg-red-900 rounded-lg py-2 text-center text-white">Delete Account</button>
                     </div>
                 </form>
             </div>
@@ -382,7 +383,7 @@
                         <input type="text" name="postal" id="postal" placeholder="Postal Code" value="<%= request.getAttribute("pcode") %>" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5">
                     </div>
                     <div class="grid grid-cols-2 mt-10 gap-4">
-                        <input type="submit" name="userAddSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg py-2 text-center text-white">
+                        <input type="submit" name="userAddSubmit" value="Update" class="w-36 bg-[#044A48] rounded-lg cursor-pointer py-2 text-center text-white">
                     </div>
                 </form>
             </div>
