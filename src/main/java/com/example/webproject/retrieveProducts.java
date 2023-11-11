@@ -35,6 +35,7 @@ public class retrieveProducts extends HttpServlet {
                 double price = resultSet.getDouble("price");
                 String description = resultSet.getString("description");
 
+                //adding product data to the product constructor which inside the product class
                 products.add(new product(id, name, price, description));
             }
         } catch (SQLException e) {
@@ -48,6 +49,19 @@ public class retrieveProducts extends HttpServlet {
                 e.printStackTrace();
             }
         }
+
+        System.out.println("Hi");
+
+        //"productLV" is a loop variable.
+        // It represents an individual element in the products list during each iteration of the loop.
+        for (product productLV : products) {
+            System.out.println("Product ID: " + productLV.getId());
+            System.out.println("Product Name: " + productLV.getName());
+            System.out.println("Product Price: Rs" + productLV.getPrice());
+            System.out.println("Product Description: " + productLV.getDescription());
+
+        }
+
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
