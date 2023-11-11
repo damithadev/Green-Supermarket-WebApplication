@@ -163,21 +163,21 @@
             <div class="grid grid-cols-3 mx-20 gap-44 mb-20">
                 <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
-                        <img src="Assets/img/order.png" class="h-7 mr-3" alt="Green Supermarket Logo">
-                        <p class="text-xl font-medium text-center text-gray-600">
-                            Total Orders
-                        </p>
-                    </div>
-                    <h2 class="font-semibold text-[#044A48] text-5xl">25</h2>
-                </div>
-                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
-                    <div class="flex mb-5">
                         <img src="Assets/img/heart.png" class="h-7 mr-3" alt="Green Supermarket Logo">
                         <p class="text-xl font-medium text-center text-gray-600">
                             Wishlist Items
                         </p>
                     </div>
                     <h2 class="font-semibold text-[#044A48] text-5xl">08</h2>
+                </div>
+                <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
+                    <div class="flex mb-5">
+                        <img src="Assets/img/order.png" class="h-7 mr-3" alt="Green Supermarket Logo">
+                        <p class="text-xl font-medium text-center text-gray-600">
+                            Total Orders
+                        </p>
+                    </div>
+                    <h2 class="font-semibold text-[#044A48] text-5xl">25</h2>
                 </div>
                 <div class="flex flex-col items-center pt-10 h-44 rounded-xl shadow-xl bg-gray-100">
                     <div class="flex mb-5">
