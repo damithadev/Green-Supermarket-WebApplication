@@ -59,7 +59,6 @@ public class retrieveProducts extends HttpServlet {
         }
 
         ObjectMapper objectMapper = new ObjectMapper();
-
         try {
             // Convert products list to JSON
             String jsonProducts = objectMapper.writeValueAsString(products);
@@ -70,7 +69,7 @@ public class retrieveProducts extends HttpServlet {
             // Write JSON data to the response
             resp.getWriter().write(jsonProducts);
         } catch (JsonProcessingException e) {
-            e.printStackTrace(); // Handle the exception appropriately, e.g., log it
+            e.printStackTrace(); 
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); // Set an appropriate HTTP status code
         }
 
