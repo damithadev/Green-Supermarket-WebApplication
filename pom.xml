@@ -36,10 +36,12 @@
         <version>${junit.version}</version>
         <scope>test</scope>
       </dependency>
+
+      <!-- MYSQL -->
       <dependency>
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
-          <version>8.0.28</version> <!-- Use the appropriate version -->
+          <version>8.0.28</version>
       </dependency>
 
       <!-- JavaMail API -->
@@ -54,7 +56,18 @@
           <artifactId>javax.mail</artifactId>
           <version>1.6.2</version>
       </dependency>
-
+      <!--JSON to Java Object & Java object to JSON-->
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+          <version>2.15.2</version>
+      </dependency>
+    <!--JSON to Java Object & Java object to JSON-->
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-databind</artifactId>
+          <version>2.15.2</version>
+      </dependency>
   </dependencies>
 
   <build>

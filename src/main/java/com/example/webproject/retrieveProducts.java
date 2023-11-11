@@ -10,8 +10,12 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 @WebServlet(name = "retrieveProducts", value = "/retrieveProducts")
 public class retrieveProducts extends HttpServlet {
@@ -36,7 +40,11 @@ public class retrieveProducts extends HttpServlet {
                 String description = resultSet.getString("description");
 
                 //adding product data to the product constructor which inside the product class
-                products.add(new product(id, name, price, description));
+                //(The constructor itself initializes the private fields directly with the provided values.
+                // You don't need to call the setters separately in this case because the constructor already sets the values for you)
+                product obj = new product(id, name, price, description);
+                products.add(obj);
+
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -50,17 +58,55 @@ public class retrieveProducts extends HttpServlet {
             }
         }
 
-        System.out.println("Hi");
+        ObjectMapper objectMapper = new ObjectMapper();
+
+        try {
+            // Convert products list to JSON
+            String jsonProducts = objectMapper.writeValueAsString(products);
+
+            // Set response content type to JSON
+            resp.setContentType("application/json");
+
+            // Write JSON data to the response
+            resp.getWriter().write(jsonProducts);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace(); // Handle the exception appropriately, e.g., log it
+            resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); // Set an appropriate HTTP status code
+        }
+
+
+
+//        List<product> products = new ArrayList<>();
+//
+//        product obj = new product(1,"apple",45.50,"this is apple");
+//        products.add(obj);
+//        product objj = new product(2,"drows",45.50,"this is apple");
+//        products.add(objj);
+//
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        String json = objectMapper.writeValueAsString(products);
+//        System.out.println(json);
+
+
+
+
 
         //"productLV" is a loop variable.
         // It represents an individual element in the products list during each iteration of the loop.
-        for (product productLV : products) {
-            System.out.println("Product ID: " + productLV.getId());
-            System.out.println("Product Name: " + productLV.getName());
-            System.out.println("Product Price: Rs" + productLV.getPrice());
-            System.out.println("Product Description: " + productLV.getDescription());
+//        for (product productLV : products) {
+//            System.out.println("Product ID: " + productLV.getId());
+//            System.out.println("Product Name: " + productLV.getName());
+//            System.out.println("Product Price: Rs" + productLV.getPrice());
+//            System.out.println("Product Description: " + productLV.getDescription());
+//        }
+//
+//        for (product product : products) {
+//            product.getId();
+//            product.getName();
+//            product.getPrice();
+//            product.getDescription();
+//        }
 
-        }
 
     }
 
