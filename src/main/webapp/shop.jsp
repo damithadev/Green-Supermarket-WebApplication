@@ -118,11 +118,12 @@
 
             // You can loop through the products and do something with each
             data.forEach(product => {
-                console.log(product.id, product.name, product.price, product.description);
+                console.log(product.id, product.name, product.price, product.description, product.category, product.image);
                 const id = product.id;
                 const name = product.name;
                 const price = product.price;
                 const desc = product.description;
+                const image = product.image;
 
                 // Get the container where you want to append the product cards
                  const productContainer = document.getElementById('product-container');
@@ -138,7 +139,7 @@
                                 `<div class="my-10 flex flex-col bg-gray-100 w-[18rem] border border-gray-200 rounded-3xl shadow-xl">
                                     <div class="flex justify-center">
                                         <a href="#">
-                                            <img src="Assets/img/apple.png" alt="" class="h-64 -mt-3 ml-5">
+                                            <img src="Assets/img/`+image+`" alt="" class="h-64 -mt-3 ml-5">
                                         </a>
                                         <a href="">
                                             <img src="Assets/img/productHeart.svg" alt="" class="h-8 mr-3 mt-3">
