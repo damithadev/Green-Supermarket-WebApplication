@@ -63,7 +63,7 @@
 
 
 <%--Product cards start here--%>
-<div id="product-container">
+<div id="product-container" class="grid grid-cols-3 mx-20 gap-40">
 
 <%--    --%>
 <%--<div class="w-full mt-10 ml-10 max-w-sm bg-white border border-gray-200 rounded-lg shadow">--%>
@@ -135,7 +135,7 @@
 
                 const productCard =
 
-                                `<div class="mt-10 ml-10 mb-10 flex flex-col bg-gray-100 max-w-xs w-full border border-gray-200 rounded-3xl shadow-xl">
+                                `<div class="my-10 flex flex-col bg-gray-100 max-w-xs border border-gray-200 rounded-3xl shadow-xl">
                                     <div class="flex justify-center">
                                         <a href="#">
                                             <img src="Assets/img/pineapple.png" alt="" class="h-64 -mt-3 ml-8">
@@ -147,7 +147,7 @@
                                     <div class="-mt-14 h-56 bg-[url('/Assets/img/shape.svg')] flex flex-col rounded-3xl h-48">
                                         <h3 class="mt-16 text-white font-bold text-center text-2xl">` +name+ `</h3>
                                         <h3 class="mt-3 text-white font-medium text-center text-lg">Rs `+price+` / Unit</h3>
-                                        <button class="mt-5 bg-[#99CC33] px-5 py-2 font-semibold text-white self-center rounded-2xl"><i class="fa fa-shopping-cart fa-lg pr-2" aria-hidden="true"></i>Add to cart</button>
+                                         <button class="mt-5 bg-[#99CC33] px-5 py-2 font-semibold text-white self-center rounded-2xl"><i class="fa fa-shopping-cart fa-lg pr-2" aria-hidden="true"></i>Add to cart</button>
                                     </div>
                                 </div>`;
 
