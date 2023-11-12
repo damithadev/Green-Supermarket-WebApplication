@@ -138,7 +138,7 @@
                                 `<div class="my-10 flex flex-col bg-gray-100 w-[18rem] border border-gray-200 rounded-3xl shadow-xl">
                                     <div class="flex justify-center">
                                         <a href="#">
-                                            <img src="Assets/img/pineapple.png" alt="" class="h-64 -mt-3 ml-5">
+                                            <img src="Assets/img/apple.png" alt="" class="h-64 -mt-3 ml-5">
                                         </a>
                                         <a href="">
                                             <img src="Assets/img/productHeart.svg" alt="" class="h-8 mr-3 mt-3">
