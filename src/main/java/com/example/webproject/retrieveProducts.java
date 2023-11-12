@@ -68,6 +68,7 @@ public class retrieveProducts extends HttpServlet {
 
             // Write JSON data to the response
             resp.getWriter().write(jsonProducts);
+            System.out.println(jsonProducts);
         } catch (JsonProcessingException e) {
             e.printStackTrace(); 
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); // Set an appropriate HTTP status code
