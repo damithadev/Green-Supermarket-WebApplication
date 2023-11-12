@@ -28,7 +28,7 @@ public class retrieveProducts extends HttpServlet {
             connection = dbConnection.getConnection();
 
             // Define your SQL query to retrieve product data from the database
-            String query = "SELECT id, name, price, description FROM products";
+            String query = "SELECT id, name, price, description, category, image FROM products";
 
             PreparedStatement preparedStatement = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -38,11 +38,13 @@ public class retrieveProducts extends HttpServlet {
                 String name = resultSet.getString("name");
                 double price = resultSet.getDouble("price");
                 String description = resultSet.getString("description");
+                String category = resultSet.getString("category");
+                String image = resultSet.getString("image");
 
                 //adding product data to the product constructor which inside the product class
                 //(The constructor itself initializes the private fields directly with the provided values.
                 // You don't need to call the setters separately in this case because the constructor already sets the values for you)
-                product obj = new product(id, name, price, description);
+                product obj = new product(id, name, price, description, category, image);
                 products.add(obj);
 
             }
