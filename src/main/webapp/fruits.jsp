@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: HP
   Date: 11/14/2023
-  Time: 11:12 PM
+  Time: 11:19 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -70,7 +70,7 @@
         .then(data => {
 
             // Filter products where category is "vegetables"
-            const vegetables = data.filter(product => product.category === 'vegetables');
+            const vegetables = data.filter(product => product.category === 'fruits');
 
             // Loop through the filtered vegetables and do something with each
             vegetables.forEach(product => {
