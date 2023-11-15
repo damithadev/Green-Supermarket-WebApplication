@@ -58,32 +58,32 @@
 
 
 <div class="main-container">
-    <div class="product-section container mx-auto z-10">
-        <div class="img flex flex-col lg:flex-row rounded-xl mx-auto shadow-lg overflow-hidden grid grid-cols-2">
+    <div class="product-section container mx-auto z-10 mt-5">
+        <div class="flex flex-col lg:flex-row mx-auto overflow-hidden grid grid-cols-2">
 
             <!-- left side container -->
             <div class="w-full  p-2 bg-white " >
                 <div class="flex flex-col items-start">
 
                     <div class="flex self-center">
-                        <img src="Assets/img/pineapple.png" class="h-[30rem]" alt="3d cart">
+                        <img src="Assets/img/pineapple.png" class="h-[30rem]" alt="product image">
                     </div>
                 </div>
             </div>
 
             <!-- right side container -->
-            <div class="details w-full py-12 px-12">
+            <div class="w-full py-12 px-12">
                 <div class="flex">
                     <p class="mb-8 text-gray-400">
                         Home &nbsp/&nbsp Fruits &nbsp/&nbsp Pineapple
                     </p>
-                    <a href="" class="w-3/5 flex justify-end">
-                        <img src="Assets/img/productHeart.svg" alt="" class="h-8 mr-3 mt-3">
+                    <a href="#" class="w-3/5 flex justify-end">
+                        <img src="Assets/img/productHeart.svg" alt="" class="h-8 mr-3">
                     </a>
                 </div>
-                <h2  class="text-3xl font-medium mb-6">Pineapple</h2>
-                <h2  class="text-xl font-medium mb-8">Rs 150 / KG</h2>
-                <p class="my-5 pr-16 font-light">
+                <h2 id="productName" class="text-3xl font-medium mb-6">Pineapple</h2>
+                <h2 id="productPrice" class="text-xl font-medium mb-8">Rs 150 / KG</h2>
+                <p id="productDescription" class="my-5 pr-16 font-light">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -127,6 +127,32 @@
             quantityField.value = currentValue - 1;
         }
     }
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        // Fetch product details based on productId from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('productId');
+
+        fetch('/retrieveProducts')
+            .then(response => response.json())
+            .then(data => {
+                // Filter product details based on productId
+                const productDetails = data.find(product => product.id === parseInt(productId));
+
+                // Display product details
+                if (productDetails) {
+                    document.getElementById('productName').innerText = productDetails.name;
+                    document.getElementById('productDescription').innerText = productDetails.description;
+                    document.getElementById('productPrice').innerText = `Price: $${productDetails.price.toFixed(2)}`;
+                } else {
+                    console.error('Product not found.');
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching data:', error);
+            });
+    });
 </script>
 </body>
 </html>

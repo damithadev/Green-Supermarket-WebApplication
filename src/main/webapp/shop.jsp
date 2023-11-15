@@ -133,7 +133,7 @@
 
                                 `<div class="my-10 flex flex-col bg-gray-100 w-[18rem] border border-gray-200 rounded-3xl shadow-xl">
                                     <div class="flex justify-center">
-                                        <a href="#">
+                                        <a href="/singleProduct.jsp?productId=`+id+`">
                                             <img src="Assets/img/`+image+`" alt="" class="h-64 -mt-3 ml-5">
                                         </a>
                                         <a href="">
