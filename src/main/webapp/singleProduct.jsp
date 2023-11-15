@@ -142,9 +142,12 @@
 
                 // Display product details
                 if (productDetails) {
+                    const price = productDetails.price.toFixed(2);
+
                     document.getElementById('productName').innerText = productDetails.name;
                     document.getElementById('productDescription').innerText = productDetails.description;
-                    document.getElementById('productPrice').innerText = `Price: $${productDetails.price.toFixed(2)}`;
+                    document.getElementById('productPrice').innerText = `Rs `+price+` / KG`;
+                    <%--`Price: $${productDetails.price.toFixed(2)}`--%>
                 } else {
                     console.error('Product not found.');
                 }
