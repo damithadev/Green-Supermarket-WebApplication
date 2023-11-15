@@ -66,7 +66,7 @@
                 <div class="flex flex-col items-start">
 
                     <div class="flex self-center">
-                        <img src="Assets/img/pineapple.png" class="h-[30rem]" alt="product image">
+                        <img id="myImage" src="Assets/img/pineapple.png" class="h-[30rem]" alt="product image">
                     </div>
                 </div>
             </div>
@@ -143,6 +143,9 @@
                 // Display product details
                 if (productDetails) {
                     const price = productDetails.price.toFixed(2);
+                    const imgName = productDetails.image;
+                    const imageElement = document.getElementById("myImage");
+                    imageElement.src = `Assets/img/`+imgName;
 
                     document.getElementById('productName').innerText = productDetails.name;
                     document.getElementById('productDescription').innerText = productDetails.description;
