@@ -102,7 +102,7 @@
                                     </div>
                                     <div class="-mt-14 h-56 bg-[url('/Assets/img/greenMask.svg')] bg-[center_top_-3rem] flex flex-col rounded-3xl h-48">
                                         <h3 class="mt-16 text-white font-bold text-center text-2xl">` +name+ `</h3>
-                                        <h3 class="mt-3 text-white font-medium text-center text-lg">Rs `+price+` / Unit</h3>
+                                        <h3 class="mt-3 text-white font-medium text-center text-lg">Rs `+price+` / KG</h3>
                                          <button class="mt-5 bg-[#99CC33] px-5 py-2 font-semibold text-white self-center rounded-2xl"><i class="fa fa-shopping-cart fa-lg pr-2" aria-hidden="true"></i>Add to cart</button>
                                     </div>
                                 </div>`;
