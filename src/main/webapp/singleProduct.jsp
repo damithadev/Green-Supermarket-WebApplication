@@ -74,7 +74,7 @@
             <!-- right side container -->
             <div class="w-full py-12 px-12">
                 <div class="flex">
-                    <p class="mb-8 text-gray-400">
+                    <p id="productBreadcrumb" class="mb-8 text-gray-400">
                         Home &nbsp/&nbsp Fruits &nbsp/&nbsp Pineapple
                     </p>
                     <a href="#" class="w-3/5 flex justify-end">
@@ -143,14 +143,23 @@
                 // Display product details
                 if (productDetails) {
                     const price = productDetails.price.toFixed(2);
+                    const name = productDetails.name;
+                    const category = productDetails.category;
                     const imgName = productDetails.image;
                     const imageElement = document.getElementById("myImage");
                     imageElement.src = `Assets/img/`+imgName;
 
-                    document.getElementById('productName').innerText = productDetails.name;
-                    document.getElementById('productDescription').innerText = productDetails.description;
+                    const demoPara = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                       commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                       velit esse`
+
+
+                    document.getElementById('productBreadcrumb').innerText = `Home / `+category+` / `+name;
+                    document.getElementById('productName').innerText = name;
+                    document.getElementById('productDescription').innerText = demoPara;
                     document.getElementById('productPrice').innerText = `Rs `+price+` / KG`;
-                    <%--`Price: $${productDetails.price.toFixed(2)}`--%>
                 } else {
                     console.error('Product not found.');
                 }

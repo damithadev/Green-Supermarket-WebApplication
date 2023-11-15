@@ -70,7 +70,7 @@
         .then(data => {
 
             // Filter products where category is "vegetables"
-            const vegetables = data.filter(product => product.category === 'vegetables');
+            const vegetables = data.filter(product => product.category === 'Vegetables');
 
             // Loop through the filtered vegetables and do something with each
             vegetables.forEach(product => {
