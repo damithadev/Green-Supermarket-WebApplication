@@ -56,7 +56,7 @@
 
 
 <%--cover page here--%>
-<div class="bg-[url('/Assets/img/vegetablesPgCoverDark.png')] h-96">
+<div class="bg-[url('/Assets/img/vegetableCoverDark.png')] h-96">
 
 </div>
 <div class="heading flex flex-col -mt-40 mb-20">
