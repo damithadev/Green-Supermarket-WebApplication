@@ -55,6 +55,14 @@
 <%--Navbar code ends here--%>
 
 
+<%--cover page here--%>
+<div class="bg-[url('/Assets/img/vegetablesPgCoverDark.png')] h-96">
+
+</div>
+<div class="heading flex flex-col -mt-40 mb-20">
+    <h1 class="font-bold text-5xl text-center text-white z-10">Hi</h1>
+</div>
+
 <%--Product cards start here--%>
 <div id="product-container" class="grid grid-cols-4 mx-20 gap-10">
 

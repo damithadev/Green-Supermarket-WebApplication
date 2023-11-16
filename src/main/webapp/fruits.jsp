@@ -54,6 +54,12 @@
 </nav>
 <%--Navbar code ends here--%>
 
+<%--cover page here--%>
+<div class="bg-[url('/Assets/img/fruitsCoverDark.png')] bg-[top_center_1rem] h-96">
+    <!-- ... -->
+</div>
+
+
 
 <%--Product cards start here--%>
 <div id="product-container" class="grid grid-cols-4 mx-20 gap-10">
