@@ -58,8 +58,7 @@
 
 <%--cover page here--%>
 <div class="flex flex-col bg-[url('/Assets/img/shopCoverDark.png')] justify-center bg-no-repeat bg-cover h-96 mb-20">
-    <h1 class="font-bold text-5xl text-center text-white leading-normal z-10">Elevate Your Plate with the Luscious Colours<br>
-        of Our Organic Fruit Delights.</h1>
+    <h1 class="font-bold text-5xl text-center text-white leading-normal z-10">Fresh Picks, Fresh Clicks <br> Shop the Finest Organic Fruits and Vegetables Here!</h1>
 </div>
 
 <%--heading 2--%>
