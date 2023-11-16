@@ -57,7 +57,6 @@
 
 <%--cover page here--%>
 <div class="flex flex-col bg-[url('/Assets/img/vegetableCoverDark.png')] justify-center h-96 mb-20">
-
     <h1 class="font-bold text-5xl text-center text-white leading-normal z-10">Elevate Your Plate with Our Diverse <br>
         Organic Vegetable Selection.</h1>
 </div>
