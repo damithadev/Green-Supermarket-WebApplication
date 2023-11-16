@@ -56,11 +56,15 @@
 
 
 <%--cover page here--%>
-<div class="bg-[url('/Assets/img/vegetableCoverDark.png')] h-96">
+<div class="flex flex-col bg-[url('/Assets/img/vegetableCoverDark.png')] justify-center h-96 mb-20">
 
+    <h1 class="font-bold text-5xl text-center text-white leading-normal z-10">Elevate Your Plate with Our Diverse <br>
+        Organic Vegetable Selection.</h1>
 </div>
-<div class="heading flex flex-col -mt-40 mb-20">
-    <h1 class="font-bold text-5xl text-center text-white z-10">Hi</h1>
+
+<%--heading 2--%>
+<div class="flex flex-col justify-center mb-10">
+    <h1 class="font-semibold text-2xl z-10 ml-20">All Vegetable Items :</h1>
 </div>
 
 <%--Product cards start here--%>
