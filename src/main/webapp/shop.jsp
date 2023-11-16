@@ -85,7 +85,6 @@
 
             // You can loop through the products and do something with each
             data.forEach(product => {
-                console.log(product.id, product.name, product.price, product.description, product.category, product.image);
                 const id = product.id;
                 const name = product.name;
                 const price = product.price;

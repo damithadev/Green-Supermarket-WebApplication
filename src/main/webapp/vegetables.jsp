@@ -85,7 +85,6 @@
 
             // Loop through the filtered vegetables and do something with each
             vegetables.forEach(product => {
-                console.log(product.id, product.name, product.price, product.description, product.category, product.image);
                 const id = product.id;
                 const name = product.name;
                 const price = product.price;
