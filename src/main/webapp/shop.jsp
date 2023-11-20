@@ -114,14 +114,9 @@
                                     <div class="-mt-14 h-56 bg-[url('/Assets/img/greenMask.svg')] bg-[center_top_-3rem] flex flex-col rounded-3xl h-48">
                                         <h3 class="mt-16 text-white font-bold text-center text-2xl">` +name+ `</h3>
                                         <h3 class="mt-3 text-white font-medium text-center text-lg">Rs `+price+` / KG</h3>
-                                         <button class="mt-5 bg-[#99CC33] px-5 py-2 font-semibold text-white self-center rounded-2xl"><i class="fa fa-shopping-cart fa-lg pr-2" aria-hidden="true"></i>Add to cart</button>
+                                        <button onclick="addToCart(`+id+`)" class="mt-5 bg-[#99CC33] px-5 py-2 font-semibold text-white self-center rounded-2xl"><i class="fa fa-shopping-cart fa-lg pr-2" aria-hidden="true"></i>Add to cart</button>
                                     </div>
                                 </div>`;
-
-
-
-
-
 
                 // Populate the card with product data
                 card.innerHTML = productCard;
@@ -129,63 +124,36 @@
                 // Append the card to the container
                 productContainer.appendChild(card);
 
-
-
-
-
-                // // Get the existing product card elements
-                // const productNameElement = document.getElementById('productName');
-                // const productPriceElement = document.getElementById('productPrice');
-                //
-                // // Update the product name and price for each product
-                // productNameElement.innerText = product.name;
-                // productPriceElement.innerText = "$" + product.price.toFixed(2);
-                //
-                // // Clone the entire product card and append it to the container
-                // const productContainer = document.getElementById('product-container');
-                // const clonedCard = document.querySelector('.product-card').cloneNode(true);
-                // productContainer.appendChild(clonedCard);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    // "Product ID: " + product.id +
-                    // "<br>Product Name: " + product.name +
-                    // "<br>Product Price: $" + product.price +
-                    // "<br>Product Description: " + product.description;
-
-
-            <%--        `--%>
-            <%--    <h3>${product.name ? product.name : 'No Name'}</h3>--%>
-            <%--    <p>${product.description ? product.description : 'No Description'}</p>--%>
-            <%--    <p>Price: $${product.price ? product.price.toFixed(2) : 'No Price'}</p>--%>
-            <%--    <button onclick="addToCart(${product.id})">Add to Cart</button>--%>
-            <%--`;--%>
-
-
-
             });
         })
         .catch(error => {
             console.error('Error fetching data:', error);
         });
+
+
+    // adding products to the cart
+    function addToCart(productId) {
+        // Get existing cart items or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Check if the product ID is already in the cart
+        const existingItem = cartItems.find(item => item.productId === productId);
+
+        if (existingItem) {
+            // Increment the quantity if the product is already in the cart
+            existingItem.quantity++;
+        } else {
+            // Add the new product to the cart with quantity 1
+            cartItems.push({ productId, quantity: 1 });
+        }
+
+        // Update the cart in localStorage
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+
+        // Provide feedback to the user (optional)
+        alert("Product added to cart!");
+    }
+
 
 </script>
 </body>
