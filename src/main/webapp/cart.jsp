@@ -70,14 +70,14 @@
                 <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
                 <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
                 <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
-                <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
+                <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Sub Total</h3>
             </div>
 
 
             <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                 <div class="flex w-2/5"> <!-- product -->
                     <div class="w-20">
-                        <img class="h-24" src="https://drive.google.com/uc?id=18KkAVkGFvaGNqPy2DIvTqmUH_nk39o3z" alt="">
+                        <img class="h-24" src="Assets/img/grapes.png" alt="">
                     </div>
                     <div class="flex flex-col justify-between ml-4 flex-grow">
                         <span class="font-bold text-sm">Iphone 6S</span>
@@ -116,11 +116,11 @@
             <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                 <div class="flex w-2/5"> <!-- product -->
                     <div class="w-20">
-                        <img class="h-24" src="https://drive.google.com/uc?id=1vXhvO9HoljNolvAXLwtw_qX3WNZ0m75v" alt="">
+                        <img class="h-24" src="Assets/img/orange.png" alt="">
                     </div>
                     <div class="flex flex-col justify-between ml-4 flex-grow">
-                        <span class="font-bold text-sm">Airpods</span>
-                        <span class="text-red-500 text-xs">Apple</span>
+                        <span class="font-bold text-sm">Orange</span>
+                        <span class="text-red-500 text-xs">Fruit</span>
                         <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                     </div>
                 </div>
@@ -150,7 +150,7 @@
             <div>
                 <label class="font-medium inline-block mb-3 text-sm uppercase">Shipping</label>
                 <select class="block p-2 text-gray-600 w-full text-sm">
-                    <option>Standard shipping - $10.00</option>
+                    <option>Standard shipping - Rs 320.00</option>
                 </select>
             </div>
             <div class="py-10">
