@@ -11,6 +11,11 @@
     <title>Cart Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        #summary {
+            background-color: #f6f6f6;
+        }
+    </style>
 </head>
 <body>
 <%--Navbar code starts here--%>
@@ -99,7 +104,7 @@
             <div class="border-t mt-8">
                 <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                     <span>Total cost</span>
-                    <span>$600</span>
+                    <span id="totalBill">$600</span>
                 </div>
                 <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
             </div>
@@ -110,34 +115,105 @@
 
 
 <script>
+
+    // // Retrieve cart items from localStorage
+    // const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    // let totalBillAmount = 0;
+    // // Loop through cart items and fetch/display product details from local storage
+    // cartItems.forEach(item => {
+    //
+    //     // Fetch all product details from the /retrieveProducts servlet
+    //     fetch('/retrieveProducts')
+    //         .then(response => response.json())
+    //         .then(productDetails => {
+    //
+    //             //filter single product detail according to the where jsonProductID === localstorageProductID
+    //             const cartItems = productDetails.filter(product => product.id === item.productId);
+    //
+    //             cartItems.forEach(singleProduct => {
+    //                 const id = singleProduct.id;
+    //                 const name = singleProduct.name;
+    //                 const category = singleProduct.category;
+    //                 const price = singleProduct.price;
+    //                 const image = singleProduct.image;
+    //                 const quantity = item.quantity;
+    //
+    //                 totalBillAmount = totalBillAmount + price;
+    //
+    //                 // Get the container where you want to display cart items
+    //                 const container = document.getElementById('cartContainer');
+    //
+    //                 // Display product details in your HTML (update this according to your structure)
+    //                 const cartItemElement = document.createElement('div');
+    //                 cartItemElement.className = 'cart-item';
+    //
+    //                 const cartItemHTML =
+    //                     `<div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+    //                         <div class="flex w-2/5">
+    //                             <div class="w-20">
+    //                                 <img class="h-24" src="Assets/img/`+image+`" alt="">
+    //                             </div>
+    //                             <div class="flex flex-col justify-between ml-4 flex-grow">
+    //                                 <span class="font-bold text-sm">`+name+`</span>
+    //                                 <span class="text-red-500 text-xs">`+category+`</span>
+    //                                 <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
+    //                             </div>
+    //                         </div>
+    //                         <div class="flex justify-center w-1/5">
+    //                             <span class="text-center w-1/5 font-semibold text-sm">`+quantity+`</span>
+    //                         </div>
+    //                         <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
+    //                         <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
+    //                     </div>`;
+    //
+    //                 // Populate the cart item with product data
+    //                 cartItemElement.innerHTML = cartItemHTML;
+    //
+    //                 // Append the cart item to the container
+    //                 container.appendChild(cartItemElement);
+    //             });
+    //
+    //         })
+    //         .catch(error => {
+    //             console.error('Error fetching product details:', error);
+    //         });
+    // });
+    //
+    // document.getElementById('totalBill').innerText = `Rs `+totalBillAmount;
+    //
+
+
+
+
+
+
+
+
     // Retrieve cart items from localStorage
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    let totalBillAmount = 0;
+    let arrayIndex = 0;
 
-    // Loop through cart items and fetch/display product details from local storage
-    cartItems.forEach(item => {
+    // Get the container where you want to display cart items
+    const container = document.getElementById('cartContainer');
 
-        // Fetch all product details from the /retrieveProducts servlet
-        fetch('/retrieveProducts')
+    // Use Promise.all to wait for all fetch operations to complete
+    Promise.all(cartItems.map(item => {
+        // Fetch product details from the /retrieveProducts servlet for each item
+        return fetch(`/retrieveProducts?id=`+item.productId)
             .then(response => response.json())
             .then(productDetails => {
+                const singleProduct = productDetails[arrayIndex]; // Assuming productDetails is an array with one element
 
-                //filter single product detail according to the where jsonProductID === localstorageProductID
-                const cartItems = productDetails.filter(product => product.id === item.productId);
-
-                cartItems.forEach(singleProduct => {
-                    const id = singleProduct.id;
-                    const name = singleProduct.name;
-                    const category = singleProduct.category;
+                if (singleProduct) {
                     const price = singleProduct.price;
-                    const image = singleProduct.image;
                     const quantity = item.quantity;
+                    arrayIndex++;
 
-                    console.log(id, name);
+                    // Update total bill amount
+                    totalBillAmount += price * quantity;
 
-                    // Get the container where you want to display cart items
-                    const container = document.getElementById('cartContainer');
-
-                    // Display product details in your HTML (update this according to your structure)
+                    // Display product details in your HTML
                     const cartItemElement = document.createElement('div');
                     cartItemElement.className = 'cart-item';
 
@@ -145,35 +221,41 @@
                         `<div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
                             <div class="flex w-2/5">
                                 <div class="w-20">
-                                    <img class="h-24" src="Assets/img/`+image+`" alt="">
+                                    <img class="h-24" src="Assets/img/`+singleProduct.image+`" alt="">
                                 </div>
                                 <div class="flex flex-col justify-between ml-4 flex-grow">
-                                    <span class="font-bold text-sm">`+name+`</span>
-                                    <span class="text-red-500 text-xs">`+category+`</span>
+                                    <span class="font-bold text-sm">`+singleProduct.name+`</span>
+                                    <span class="text-red-500 text-xs">`+singleProduct.category+`</span>
                                     <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                                 </div>
                             </div>
                             <div class="flex justify-center w-1/5">
-                                <span class="text-center w-1/5 font-semibold text-sm">1</span>
+                                <span class="text-center w-1/5 font-semibold text-sm">`+quantity+`</span>
                             </div>
                             <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
                             <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
                         </div>`;
-
-
 
                     // Populate the cart item with product data
                     cartItemElement.innerHTML = cartItemHTML;
 
                     // Append the cart item to the container
                     container.appendChild(cartItemElement);
-                });
-
+                } else {
+                    console.error(`Product with ID `+item.productId+` not found`);
+                }
             })
             .catch(error => {
                 console.error('Error fetching product details:', error);
             });
-    });
+    }))
+        .then(() => {
+            // Display the total bill amount
+            document.getElementById('totalBill').innerText = `Rs `+totalBillAmount;
+        })
+        .catch(error => {
+            console.error('Error fetching product details:', error);
+        });
 
 </script>
 </body>
