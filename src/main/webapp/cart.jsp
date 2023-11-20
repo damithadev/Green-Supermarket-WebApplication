@@ -17,9 +17,50 @@
         }
     </style>
 </head>
-<body class="bg-gray-100">
-<div class="container mx-auto mt-10">
-    <div class="flex shadow-md my-10">
+<body>
+<%--Navbar code starts here--%>
+<nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
+        <a href="/index.jsp" class="flex items-center">
+            <img src="Assets/img/Logo.svg" class="h-16 mr-3" alt="Flowbite Logo">
+        </a>
+
+        <%-- navbar fant awsome icons--%>
+        <div class="flex md:order-2 gap-x-8">
+            <a href="/">
+                <i class="fa fa-shopping-cart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
+            </a>
+            <a href="/">
+                <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
+            </a>
+            <a href="/login">
+                <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
+            </a>
+        </div>
+
+        <%--navbar links--%>
+        <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+                <li>
+                    <a href="/index.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded md:bg-transparent md:p-0">Home</a>
+                </li>
+                <li>
+                    <a href="/vegetables.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Vegetables</a>
+                </li>
+                <li>
+                    <a href="/fruits.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Fruits</a>
+                </li>
+                <li>
+                    <a href="/shop.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Shop</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<%--Navbar code ends here--%>
+
+<div class="container mx-auto">
+    <div class="flex shadow-md">
         <div class="w-3/4 bg-white px-10 py-10">
             <div class="flex justify-between border-b pb-8">
                 <h1 class="font-semibold text-2xl">Shopping Cart</h1>
