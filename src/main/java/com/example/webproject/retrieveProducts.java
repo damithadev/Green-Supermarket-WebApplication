@@ -75,41 +75,7 @@ public class retrieveProducts extends HttpServlet {
             e.printStackTrace(); 
             resp.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR); // Set an appropriate HTTP status code
         }
-
-
-
-//        List<product> products = new ArrayList<>();
-//
-//        product obj = new product(1,"apple",45.50,"this is apple");
-//        products.add(obj);
-//        product objj = new product(2,"drows",45.50,"this is apple");
-//        products.add(objj);
-//
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        String json = objectMapper.writeValueAsString(products);
-//        System.out.println(json);
-
-
-
-
-
-        //"productLV" is a loop variable.
-        // It represents an individual element in the products list during each iteration of the loop.
-//        for (product productLV : products) {
-//            System.out.println("Product ID: " + productLV.getId());
-//            System.out.println("Product Name: " + productLV.getName());
-//            System.out.println("Product Price: Rs" + productLV.getPrice());
-//            System.out.println("Product Description: " + productLV.getDescription());
-//        }
-//
-//        for (product product : products) {
-//            product.getId();
-//            product.getName();
-//            product.getPrice();
-//            product.getDescription();
-//        }
-
-
+        
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
