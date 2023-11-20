@@ -68,76 +68,12 @@
                 <h3 class="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Sub Total</h3>
             </div>
 
-
-            <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
-                <div class="flex w-2/5"> <!-- product -->
-                    <div class="w-20">
-                        <img class="h-24" src="Assets/img/grapes.png" alt="">
-                    </div>
-                    <div class="flex flex-col justify-between ml-4 flex-grow">
-                        <span class="font-bold text-sm">Iphone 6S</span>
-                        <span class="text-red-500 text-xs">Apple</span>
-                        <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
-                    </div>
-                </div>
-                <div class="flex justify-center w-1/5">
-                    <span class="text-center w-1/5 font-semibold text-sm">1</span>
-                </div>
-                <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
-                <span class="text-center w-1/5 font-semibold text-sm">$400.00</span>
-            </div>
-
-
-
-
-
             <div id="cartContainer">
-
+                <%-- cart items will be adding here--%>
             </div>
 
-
-<%--            <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">--%>
-<%--                <div class="flex w-2/5"> <!-- product -->--%>
-<%--                    <div class="w-20">--%>
-<%--                        <img class="h-24" src="Assets//img/pineapple.png" alt="">--%>
-<%--                    </div>--%>
-<%--                    <div class="flex flex-col justify-between ml-4 flex-grow">--%>
-<%--                        <span class="font-bold text-sm">Xiaomi Mi 20000mAh</span>--%>
-<%--                        <span class="text-red-500 text-xs">Xiaomi</span>--%>
-<%--                        <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <div class="flex justify-center w-1/5">--%>
-<%--                    <span class="text-center w-1/5 font-semibold text-sm">1</span>--%>
-<%--                </div>--%>
-<%--                <span class="text-center w-1/5 font-semibold text-sm">$40.00</span>--%>
-<%--                <span class="text-center w-1/5 font-semibold text-sm">$40.00</span>--%>
-<%--            </div>--%>
-
-
-<%--            <div class="flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">--%>
-<%--                <div class="flex w-2/5"> <!-- product -->--%>
-<%--                    <div class="w-20">--%>
-<%--                        <img class="h-24" src="Assets/img/orange.png" alt="">--%>
-<%--                    </div>--%>
-<%--                    <div class="flex flex-col justify-between ml-4 flex-grow">--%>
-<%--                        <span class="font-bold text-sm">Orange</span>--%>
-<%--                        <span class="text-red-500 text-xs">Fruit</span>--%>
-<%--                        <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--                <div class="flex justify-center w-1/5">--%>
-<%--                    <span class="text-center w-1/5 font-semibold text-sm">1</span>--%>
-<%--                </div>--%>
-<%--                <span class="text-center w-1/5 font-semibold text-sm">$150.00</span>--%>
-<%--                <span class="text-center w-1/5 font-semibold text-sm">$150.00</span>--%>
-<%--            </div>--%>
-
-
-
-
-            <a href="#" class="flex font-semibold text-indigo-600 text-sm mt-10">
-
+            <%--back to shop page--%>
+            <a href="/shop.jsp" class="flex font-semibold text-indigo-600 text-sm mt-10">
                 <svg class="fill-current mr-2 text-indigo-600 w-4" viewBox="0 0 448 512"><path d="M134.059 296H436c6.627 0 12-5.373 12-12v-56c0-6.627-5.373-12-12-12H134.059v-46.059c0-21.382-25.851-32.09-40.971-16.971L7.029 239.029c-9.373 9.373-9.373 24.569 0 33.941l86.059 86.059c15.119 15.119 40.971 4.411 40.971-16.971V296z"/></svg>
                 Continue Shopping
             </a>
@@ -220,8 +156,8 @@
                             <div class="flex justify-center w-1/5">
                                 <span class="text-center w-1/5 font-semibold text-sm">1</span>
                             </div>
-                            <span class="text-center w-1/5 font-semibold text-sm">`+price+`</span>
-                            <span class="text-center w-1/5 font-semibold text-sm">`+price+`</span>
+                            <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
+                            <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
                         </div>`;
 
 
