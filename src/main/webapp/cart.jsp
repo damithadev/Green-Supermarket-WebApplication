@@ -157,13 +157,13 @@
                 <label for="promo" class="font-semibold inline-block mb-3 text-sm uppercase">Promo Code</label>
                 <input type="text" id="promo" placeholder="Enter your code" class="p-2 text-sm w-full">
             </div>
-            <button class="bg-red-500 hover:bg-red-600 px-5 py-2 text-sm text-white uppercase">Apply</button>
+            <button class="bg-[#99CC33] font-medium uppercase text-white px-6 py-1.5 rounded hover:bg-primary-700">Apply</button>
             <div class="border-t mt-8">
                 <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                     <span>Total cost</span>
                     <span>$600</span>
                 </div>
-                <button class="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">Checkout</button>
+                <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
             </div>
         </div>
 
