@@ -114,8 +114,8 @@
 
                 // Get the container where you want to append the product cards
                 const productContainer = document.getElementById('product-container');
-                //
-                // // Create a card element
+
+                // Create a card element
                 const card = document.createElement('div');
                 card.className = 'product-card';
 

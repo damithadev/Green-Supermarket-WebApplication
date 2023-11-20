@@ -14,7 +14,6 @@
 </head>
 <body>
 
-
 <%--Navbar code starts here--%>
 <nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
@@ -73,7 +72,6 @@
     <!-- Product cards will be added here -->
 </div>
 
-
 <%--Pop message here--%>
 <div id="popup-modal" tabindex="-1" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-md max-h-full">
@@ -94,6 +92,7 @@
         </div>
     </div>
 </div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 
 <script>
@@ -113,8 +112,8 @@
 
                 // Get the container where you want to append the product cards
                  const productContainer = document.getElementById('product-container');
-                //
-                // // Create a card element
+
+                // Create a card element
                 const card = document.createElement('div');
                 card.className = 'product-card';
 
