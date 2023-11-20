@@ -22,7 +22,7 @@
 
         <%-- navbar fant awsome icons--%>
         <div class="flex md:order-2 gap-x-8">
-            <a href="/">
+            <a href="/cart.jsp">
                 <i class="fa fa-shopping-cart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
             <a href="/">
@@ -151,6 +151,31 @@
         .catch(error => {
             console.error('Error fetching data:', error);
         });
+
+
+    // adding products to the cart
+    function addToCart(productId) {
+        // Get existing cart items or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Check if the product ID is already in the cart
+        const existingItem = cartItems.find(item => item.productId === productId);
+
+        if (existingItem) {
+            // Increment the quantity if the product is already in the cart
+            existingItem.quantity++;
+        } else {
+            // Add the new product to the cart with quantity 1
+            cartItems.push({ productId, quantity: 1 });
+        }
+
+        // Update the cart in localStorage
+        localStorage.setItem("cart", JSON.stringify(cartItems));
+
+        // Provide feedback to the user (optional)
+        // alert("Product added to cart!");
+    }
+
 
 </script>
 </body>

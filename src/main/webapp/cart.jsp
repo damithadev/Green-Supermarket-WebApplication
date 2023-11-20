@@ -11,11 +11,6 @@
     <title>Cart Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        #summary {
-            background-color: #f6f6f6;
-        }
-    </style>
 </head>
 <body>
 <%--Navbar code starts here--%>
@@ -27,7 +22,7 @@
 
         <%-- navbar fant awsome icons--%>
         <div class="flex md:order-2 gap-x-8">
-            <a href="/">
+            <a href="/cart.jsp">
                 <i class="fa fa-shopping-cart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
             <a href="/">

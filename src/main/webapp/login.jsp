@@ -26,7 +26,7 @@
 
         <%-- navbar fant awsome icons--%>
         <div class="flex md:order-2 gap-x-8">
-            <a href="/">
+            <a href="/cart.jsp">
                 <i class="fa fa-shopping-cart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
             <a href="/">
