@@ -221,7 +221,7 @@
                                 <div class="flex flex-col justify-between ml-4 flex-grow">
                                     <span class="font-bold text-sm">`+singleProduct.name+`</span>
                                     <span class="text-red-500 text-xs">`+singleProduct.category+`</span>
-                                    <a href="#" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
+                                    <a href="#" onclick="removeFromCart(`+item.productId+`)" class="font-semibold hover:text-red-500 text-gray-500 text-xs">Remove</a>
                                 </div>
                             </div>
                             <div class="flex justify-center w-1/5">
@@ -251,6 +251,30 @@
         .catch(error => {
             console.error('Error fetching product details:', error);
         });
+
+
+    function removeFromCart(productId) {
+        // Get existing cart items or initialize an empty array
+        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+        // Find the index of the product with the given ID in the cart
+        const productIndex = cartItems.findIndex(item => item.productId === productId);
+
+        if (productIndex !== -1) {
+            // Remove the product from the cart array
+            cartItems.splice(productIndex, 1);
+
+            // Update the cart in localStorage
+            localStorage.setItem("cart", JSON.stringify(cartItems));
+
+            // Provide feedback to the user (optional)
+             alert("Product removed from cart!");
+        } else {
+            // Product not found in the cart
+            // You can handle this case as needed
+             alert("Product not found in cart!");
+        }
+    }
 
 </script>
 </body>
