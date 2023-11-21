@@ -203,11 +203,14 @@
         return productId ? parseInt(productId, 10) : null;
     }
 
-    const quantityIntValue = parseInt(document.getElementById("quantity").value);
+
 
     // adding products to the cart
     function addToCart() {
         let productId = getProductIdFromURL();
+
+        const quantityIntValue = parseInt(document.getElementById("quantity").value);
+        console.log(quantityIntValue);
         // Get existing cart items or initialize an empty array
         let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
 
