@@ -64,7 +64,7 @@
         <div class="w-3/4 bg-white px-10 py-10">
             <div class="flex justify-between border-b pb-8">
                 <h1 class="font-semibold text-2xl">Shopping Cart</h1>
-                <h2 class="font-semibold text-2xl">2 Items</h2>
+                <h2 id="totalProducts" class="font-semibold text-2xl">Item count</h2>
             </div>
             <div class="flex mt-10 mb-5">
                 <h3 class="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
@@ -87,7 +87,7 @@
         <div id="summary" class="w-1/4 px-8 py-10">
             <h1 class="font-semibold text-2xl border-b pb-8">Order Summary</h1>
             <div class="flex justify-between mt-10 mb-5">
-                <span class="font-semibold text-sm uppercase">Items 2</span>
+                <span id="totalProductss" class="font-semibold text-sm uppercase">Item count</span>
                 <span class="font-semibold text-sm"></span>
             </div>
             <div>
@@ -104,7 +104,7 @@
             <div class="border-t mt-8">
                 <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                     <span>Total cost</span>
-                    <span id="totalBill">$600</span>
+                    <span id="totalBill">Null</span>
                 </div>
                 <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
             </div>
@@ -208,6 +208,7 @@
     // Retrieve cart items from localStorage
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     let totalBillAmount = 0;
+    let totalProductCount = 0;
 
     // Get the container where you want to display cart items
     const container = document.getElementById('cartContainer');
@@ -232,6 +233,9 @@
 
                     //create subtotal amount
                     subTotal = price * quantity;
+
+                    // Increment the total product count by 1
+                    totalProductCount += 1;
 
                     // Display product details in your HTML
                     const cartItemElement = document.createElement('div');
@@ -270,8 +274,10 @@
             });
     }))
         .then(() => {
-            // Display the total bill amount
+            // Display the total bill amount and total product count
             document.getElementById('totalBill').innerText = `Rs `+totalBillAmount;
+            document.getElementById('totalProducts').innerText = totalProductCount +` Items`;
+            document.getElementById('totalProductss').innerText = totalProductCount +` Items`;
         })
         .catch(error => {
             console.error('Error fetching product details:', error);
