@@ -225,9 +225,13 @@
                 if (singleProduct) {
                     const price = singleProduct.price;
                     const quantity = item.quantity;
+                    let subTotal = 0;
 
                     // Update total bill amount
                     totalBillAmount += price * quantity;
+
+                    //create subtotal amount
+                    subTotal = price * quantity;
 
                     // Display product details in your HTML
                     const cartItemElement = document.createElement('div');
@@ -249,7 +253,7 @@
                                 <span class="text-center w-1/5 font-semibold text-sm">`+quantity+`</span>
                             </div>
                             <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
-                            <span class="text-center w-1/5 font-semibold text-sm">Rs `+price+`</span>
+                            <span class="text-center w-1/5 font-semibold text-sm">Rs `+subTotal+`</span>
                         </div>`;
 
                     // Populate the cart item with product data
