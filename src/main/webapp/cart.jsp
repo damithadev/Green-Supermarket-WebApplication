@@ -187,23 +187,23 @@
     // Retrieve cart items from localStorage
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     let totalBillAmount = 0;
-    let arrayIndex = 0;
 
     // Get the container where you want to display cart items
     const container = document.getElementById('cartContainer');
 
     // Use Promise.all to wait for all fetch operations to complete
     Promise.all(cartItems.map(item => {
+        let arrayIndex = item.productId - 1;
+
         // Fetch product details from the /retrieveProducts servlet for each item
         return fetch(`/retrieveProducts?id=`+item.productId)
             .then(response => response.json())
             .then(productDetails => {
-                const singleProduct = productDetails[arrayIndex]; // Assuming productDetails is an array with one element
+                const singleProduct = productDetails[arrayIndex]; // getting relevant product details (arrayIndex) by subtracting productId from 1
 
                 if (singleProduct) {
                     const price = singleProduct.price;
                     const quantity = item.quantity;
-                    arrayIndex++;
 
                     // Update total bill amount
                     totalBillAmount += price * quantity;
