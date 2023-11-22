@@ -101,12 +101,21 @@
                 <input type="text" id="promo" placeholder="Enter your code" class="p-2 text-sm w-full">
             </div>
             <button class="bg-[#99CC33] font-medium uppercase text-white px-6 py-1.5 rounded hover:bg-primary-700">Apply</button>
+
+            <%
+                // Access the HttpSession
+                HttpSession checkEmail = request.getSession();
+
+                // Get the userEmail from the session
+                String userEmail = (String) checkEmail.getAttribute("userEmail");
+            %>
+
             <div class="border-t mt-8">
                 <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                     <span>Total cost</span>
                     <span id="totalBill">Null</span>
                 </div>
-                <button id="checkoutButton" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
+                <button  id="checkoutButton" class="<% if (userEmail == null) { %>hover:bg-gray-500 cursor-not-allowed<% } %> mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
             </div>
         </div>
 
