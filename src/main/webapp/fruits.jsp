@@ -95,17 +95,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
 
 <script>
-
     // Fetch data from the servlet
     fetch('/retrieveProducts')
         .then(response => response.json())
         .then(data => {
 
             // Filter products where category is "vegetables"
-            const vegetables = data.filter(product => product.category === 'Fruits');
+            const fruits = data.filter(product => product.category === 'Fruits');
 
             // Loop through the filtered vegetables and do something with each
-            vegetables.forEach(product => {
+            fruits.forEach(product => {
                 const id = product.id;
                 const name = product.name;
                 const price = product.price;
@@ -175,7 +174,6 @@
         // Provide feedback to the user (optional)
         // alert("Product added to cart!");
     }
-
 
 </script>
 </body>

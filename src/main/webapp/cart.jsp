@@ -106,7 +106,7 @@
                     <span>Total cost</span>
                     <span id="totalBill">Null</span>
                 </div>
-                <button type="submit" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
+                <button id="checkoutButton" class="mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
             </div>
         </div>
 
@@ -238,6 +238,55 @@
              alert("Product not found in cart!");
         }
     }
+
+
+
+
+
+    // Assume you have a function to get the product count and details
+    function getOrderDetails() {
+        // Fetch order details from localStorage or any other source
+        return cartItems.map(item => ({ productId: item.productId, quantity: item.quantity }));
+    }
+
+    // Function to handle the checkout process
+    function checkout() {
+        const orderDetails = getOrderDetails();
+
+        // Make sure there are items in the cart before proceeding with checkout
+        if (orderDetails.length === 0) {
+            alert('Your cart is empty. Add items before checking out.');
+            return;
+        }
+
+        console.log(orderDetails)
+        //Send order details to the backend using fetch API
+        fetch('/sendOrderData', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ orderDetails }),
+        })
+            .then(response => {
+                if (response.ok) {
+                    // Order was successful, you can handle success accordingly
+                    console.log('Order placed successfully!');
+                    // Optionally, you can clear the cart after successful order
+                    localStorage.removeItem('cart');
+                } else {
+                    // Handle errors or failed orders
+                    console.error('Error placing order:', response.statusText);
+                }
+            })
+            .catch(error => {
+                console.error('Error during fetch:', error);
+            });
+    }
+
+    // Attach the checkout function to the button click event
+    document.getElementById('checkoutButton').addEventListener('click', checkout);
+
 
 </script>
 </body>
