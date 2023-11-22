@@ -60,7 +60,10 @@ public class register extends HttpServlet {
 
                 if (rowsInserted > 0) {
                     // Insertion was successful
-                    resp.sendRedirect("myAccount.jsp");
+                    // Store the Email in the session
+                    HttpSession HTsession = req.getSession();
+                    HTsession.setAttribute("userEmail", email);
+                    resp.sendRedirect("/myaccount");
                 } else {
                     // Insertion failed
                     resp.sendRedirect("failed.jsp");
