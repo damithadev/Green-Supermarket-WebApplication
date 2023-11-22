@@ -18,6 +18,14 @@
     </style>
 </head>
 <body>
+<%
+    // Access the HttpSession
+    HttpSession checkEmail = request.getSession();
+
+    // Get the userEmail from the session
+    String userEmail = (String) checkEmail.getAttribute("userEmail");
+%>
+
 <%--Navbar code starts here--%>
 <nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
@@ -33,7 +41,7 @@
             <a href="/">
                 <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
-            <a href="/login">
+            <a href="<% if (userEmail == null) { %> /login <% } else { %> /myaccount <% } %>">
                 <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
         </div>
@@ -101,15 +109,6 @@
                 <input type="text" id="promo" placeholder="Enter your code" class="p-2 text-sm w-full">
             </div>
             <button class="bg-[#99CC33] font-medium uppercase text-white px-6 py-1.5 rounded hover:bg-primary-700">Apply</button>
-
-            <%
-                // Access the HttpSession
-                HttpSession checkEmail = request.getSession();
-
-                // Get the userEmail from the session
-                String userEmail = (String) checkEmail.getAttribute("userEmail");
-            %>
-
             <div class="border-t mt-8">
                 <div class="flex font-semibold justify-between py-6 text-sm uppercase">
                     <span>Total cost</span>
