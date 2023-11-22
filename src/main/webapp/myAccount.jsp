@@ -17,9 +17,13 @@
 </head>
 <body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+<%
+    // Access the HttpSession
+    HttpSession checkEmail = request.getSession();
 
-<%--adding background color to entire page--%>
-<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
+    // Get the userEmail from the session
+    String userEmail = (String) checkEmail.getAttribute("userEmail");
+%>
 
 <nav class="fixed top-0 z-20 w-full bg-white border-b border-gray-200">
     <div class="px-3 py-2 lg:px-5 lg:pl-2">
