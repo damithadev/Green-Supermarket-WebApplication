@@ -8,7 +8,11 @@ public class product {
     private String category;
     private String image;
 
-    // Constructor
+    // Default constructor for JACKSON to receive JSON data (JSON to JAVA OBJECT)
+    public product() {
+    }
+
+    // parameterized Constructor (JAVA OBJECT TO JSON)
     public product(int id, String name, double price, String description, String category, String image) {
         this.id = id;
         this.name = name;

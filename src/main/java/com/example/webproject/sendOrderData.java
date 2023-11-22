@@ -47,3 +47,4 @@ public class sendOrderData extends HttpServlet {
         resp.getWriter().write("Order received successfully");
     }
 }
+
