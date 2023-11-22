@@ -14,9 +14,15 @@
 </head>
 <body>
 
-<%--adding background color to entire page--%>
-<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
+<%
+    // Check if "userEmail" exists in the HttpSession
+    String userEmail = (String) session.getAttribute("userEmail");
 
+    // Set a default value if "userEmail" is not available
+    if (userEmail == null) {
+        userEmail = ""; // Set to a default value or an empty string
+    }
+%>
 <%--Navbar code starts here--%>
 <nav class="bg-white  sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto pb-1">
@@ -32,7 +38,7 @@
             <a href="/">
                 <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
-            <a href="/login">
+            <a href="<% if (userEmail == null) { %> /login <% } else { %> /myaccount <% } %>">
                 <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
         </div>
@@ -92,15 +98,6 @@
 
                     <form method="post" action="/sendOtp" class="mt-8">
                         <div class="flex mb-8">
-                            <%
-                                // Check if "userEmail" exists in the HttpSession
-                                String userEmail = (String) session.getAttribute("userEmail");
-
-                                // Set a default value if "userEmail" is not available
-                                if (userEmail == null) {
-                                    userEmail = ""; // Set to a default value or an empty string
-                                }
-                            %>
                             <input type="email" name="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-l-lg focus:ring-primary-600 focus:border-primary-600 block grow p-2.5" value="<%= userEmail %>" placeholder="name@gmail.com" required="">
                             <button type="submit" class="bg-[#99CC33] font-medium text-white pl-2 pr-3 py-2 rounded-r-lg hover:bg-primary-700">Send OTP</button>
                         </div>
@@ -120,9 +117,6 @@
         </div>
     </div>
     <%--verification form ends here--%>
-
-<%--</div>--%>
-<!-- <%--background color ended--%> -->
 
 </body>
 </html>

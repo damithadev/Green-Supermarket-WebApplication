@@ -14,8 +14,13 @@
 </head>
 <body>
 
-<%--adding background color to entire page--%>
-<%--<div class="min-h-screen bg-[#99CC33]/[.06]">--%>
+<%
+    // Access the HttpSession
+    HttpSession checkEmail = request.getSession();
+
+    // Get the userEmail from the session
+    String userEmail = (String) checkEmail.getAttribute("userEmail");
+%>
 
 <%--Navbar code starts here--%>
 <nav class="bg-white sticky top-0 w-full z-20 left-0 border-b border-gray-200 shadow-md overflow-hidden">
@@ -32,7 +37,7 @@
             <a href="/">
                 <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
-            <a href="/login">
+            <a href="<% if (userEmail == null) { %> /login <% } else { %> /myaccount <% } %>">
                 <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
         </div>
