@@ -115,7 +115,10 @@
                     <span>Total cost</span>
                     <span id="totalBill">Null</span>
                 </div>
-                <button  id="checkoutButton" class="<% if (userEmail == null) { %>hover:bg-gray-500 cursor-not-allowed<% } %> mb-8 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
+                <button <% if (userEmail == null) { %>disabled<% } %> id="checkoutButton" class="<% if (userEmail == null) { %>hover:bg-gray-500 cursor-not-allowed<% } %> mb-3 w-full bg-[#044A48] text-white hover:bg-primary-700 uppercase focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3 text-center">Checkout</button>
+                <% if (userEmail == null) { %>
+                <p class="text-red-500 text-sm">Please <a href="/login"> <strong>login</strong></a> to the system before placing the order.</p>
+                <% } %>
             </div>
         </div>
 
