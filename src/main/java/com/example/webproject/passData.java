@@ -5,6 +5,17 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class passData {
+
+
+    //Didn't used this class, you can delete this
+
+
+
+
+
+
+
+
     public static void main(String[] args) {
         // Sample data for the order details
 //        int[] productIds = {101, 102, 103};

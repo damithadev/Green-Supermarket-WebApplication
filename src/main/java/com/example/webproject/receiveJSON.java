@@ -12,6 +12,17 @@ import jakarta.servlet.annotation.*;
 @WebServlet(name = "receiveJSON", value = "/receiveJSON")
 public class receiveJSON extends HttpServlet {
 
+
+
+
+//didn't used this class, you can delete this
+
+
+
+
+
+
+
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        // Assume your retrieveProducts servlet URL
 //        String retrieveProductsURL = "http://localhost:8090/retrieveProducts";
@@ -74,36 +85,36 @@ public class receiveJSON extends HttpServlet {
 
 
         // Sample data for the order details
-        int[] productIds = {101, 102, 103};
-        int[] customerIds = {10, 20, 30};
-        int[] quantities = {2, 1, 4};
-        double[] unitPrices = {20.00, 30.00, 15.00};
-
-
-        // Construct the dynamic SQL query
-        String query = "INSERT INTO orders (pid, cid, quantity, unitPrice) VALUES ( ?, ?, ?, ?)";
-
-        // Establish a database connection using dbConnection class
-        try (Connection connection = dbConnection.getConnection();
-             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
-
-            // Loop through the products and set parameters for each
-            for (int i = 0; i < productIds.length; i++) {
-                preparedStatement.setInt(1, productIds[i]);
-                preparedStatement.setInt(2, customerIds[i]);
-                preparedStatement.setInt(3, quantities[i]);
-                preparedStatement.setDouble(4, unitPrices[i]);
-                //preparedStatement.setDouble(5, quantities[i] * unitPrices[i] * (1 - discounts[i]));
-
-                // Execute the query for each product
-                preparedStatement.executeUpdate();
-            }
-
-            System.out.println("Rows inserted successfully.");
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        int[] productIds = {101, 102, 103};
+//        int[] customerIds = {10, 20, 30};
+//        int[] quantities = {2, 1, 4};
+//        double[] unitPrices = {20.00, 30.00, 15.00};
+//
+//
+//        // Construct the dynamic SQL query
+//        String query = "INSERT INTO orders (pid, cid, quantity, unitPrice) VALUES ( ?, ?, ?, ?)";
+//
+//        // Establish a database connection using dbConnection class
+//        try (Connection connection = dbConnection.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+//
+//            // Loop through the products and set parameters for each
+//            for (int i = 0; i < productIds.length; i++) {
+//                preparedStatement.setInt(1, productIds[i]);
+//                preparedStatement.setInt(2, customerIds[i]);
+//                preparedStatement.setInt(3, quantities[i]);
+//                preparedStatement.setDouble(4, unitPrices[i]);
+//                //preparedStatement.setDouble(5, quantities[i] * unitPrices[i] * (1 - discounts[i]));
+//
+//                // Execute the query for each product
+//                preparedStatement.executeUpdate();
+//            }
+//
+//            System.out.println("Rows inserted successfully.");
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

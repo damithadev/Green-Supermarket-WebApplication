@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
@@ -95,9 +96,20 @@ public class sendOrderData extends HttpServlet {
             e.printStackTrace();
         }
 
+
+        try {
+            EmailSender.sendEmail(userEmail, "Your Order Has Been Placed", "Your order has been successfully placed on our platform. We are work on it."); // Replace with your OTP code
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
         // Send a response if needed
         resp.setContentType("application/json");
         resp.getWriter().write("Order received successfully");
+
+        // Forward the request back to verify.jsp
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/myaccount");
+        dispatcher.forward(req, resp);
     }
 
 

@@ -546,10 +546,19 @@
 
 
     function removeUserEmail() {
-        // Using JavaScript to redirect and remove userEmail from HttpSession
-        window.location.href = "/signup";
-        <%-- Remove userEmail from HttpSession --%>
-        <% session.removeAttribute("userEmail"); %>
+        // Make an AJAX request to the servlet
+        fetch('/signout')
+            .then(response => response.json())
+            .then(data => {
+                // Handle the response from the server
+                console.log(data);
+
+                // Optionally, redirect to a confirmation page
+                //window.location.href = '/confirmation.jsp';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
     }
 
 
