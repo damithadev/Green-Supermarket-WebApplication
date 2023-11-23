@@ -59,13 +59,13 @@
                                 <a href="index.jsp" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">Home</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">Shop</a>
+                                <a href="/shop.jsp" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 " role="menuitem">Shop</a>
                             </li>
                             <li>
                                 <a href="/cart.jsp" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Cart</a>
                             </li>
                             <li>
-                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
+                                <a href="/index.jsp" onclick="removeUserEmail()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Sign out</a>
                             </li>
                         </ul>
                     </div>
@@ -545,6 +545,12 @@
     });
 
 
+    function removeUserEmail() {
+        // Using JavaScript to redirect and remove userEmail from HttpSession
+        window.location.href = "/signup";
+        <%-- Remove userEmail from HttpSession --%>
+        <% session.removeAttribute("userEmail"); %>
+    }
 
 
 </script>

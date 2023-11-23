@@ -41,7 +41,7 @@
             <a href="/">
                 <i class="fa fa-heart fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
-            <a href="<% if (userEmail == null) { %> /login <% } else { %> /myaccount.jsp <% } %>">
+            <a href="<% if (userEmail == null) { %> /login <% } else { %> /myaccount <% } %>">
                 <i class="fa fa-user fa-xl" aria-hidden="true" style="color: #044A48;"></i>
             </a>
         </div>
