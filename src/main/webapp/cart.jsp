@@ -285,6 +285,10 @@
                     console.log('Order placed successfully!');
                     // Optionally, you can clear the cart after successful order
                     localStorage.removeItem('cart');
+                    //set payment amount in localstorage
+                    localStorage.setItem('payment', totalBillAmount);
+                    // Redirect to payment.jsp
+                    window.location.href = 'payment.jsp';
                 } else {
                     // Handle errors or failed orders
                     console.error('Error placing order:', response.statusText);
