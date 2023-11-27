@@ -64,7 +64,6 @@ public class retrieveProducts extends HttpServlet {
         try {
             // Convert products list to JSON
             String jsonProducts = objectMapper.writeValueAsString(products);
-
             // Set response content type to JSON
             resp.setContentType("application/json");
 

@@ -153,7 +153,6 @@
     let totalBillAmount = 0;
     let totalProductCount = 0;
 
-    // Get the container where you want to display cart items
     const container = document.getElementById('cartContainer');
 
     // Use Promise.all to wait for all fetch operations to complete

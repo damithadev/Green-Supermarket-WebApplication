@@ -108,10 +108,10 @@
         .then(response => response.json())
         .then(data => {
 
-            // Filter products where category is "vegetables"
+            // Filter products where category is "fruits"
             const fruits = data.filter(product => product.category === 'Fruits');
 
-            // Loop through the filtered vegetables and do something with each
+            // Loop through the filtered fruits data
             fruits.forEach(product => {
                 const id = product.id;
                 const name = product.name;
@@ -119,7 +119,7 @@
                 const desc = product.description;
                 const image = product.image;
 
-                // Get the container where you want to append the product cards
+                // Get the container where want to append the product cards
                 const productContainer = document.getElementById('product-container');
 
                 // Create a card element
