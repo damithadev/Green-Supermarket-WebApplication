@@ -63,9 +63,23 @@
   </div>
 </nav>
 <%--Navbar code ends here--%>
-<h1 class="text-center font-semibold mt-32 text-3xl">Home Page here</h1>
-<br/>
 
+<section class="bg-[url('/Assets/img/slide1.png')] bg-cover">
+  <div class="grid max-w-screen-xl min-h-screen px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+
+    <div class="hidden lg:mt-0 lg:col-span-7 lg:flex">
+
+    </div>
+    <div class="mr-auto place-self-center lg:col-span-5">
+      <h1 class="max-w-2xl -mt-32 mb-10 text-4xl font-extrabold md:text-5xl xl:text-5xl" style="line-height: 4.5rem;">Buy Fresh Vegetables & Fruits</h1>
+      <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl ">The freshest vegetables and fruits from farm to store, now delivered to your doorstep.</p>
+      <a href="#" class="inline-flex mt-6 items-center justify-center px-10 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg bg-[#044A48] text-white focus:ring-4 focus:ring-gray-100">
+        Shop Now
+      </a>
+    </div>
+
+  </div>
+</section>
 
 </body>
 </html>

@@ -91,7 +91,7 @@
                     </div>
 
                     <!-- Add the PayPal Smart Payment Button script -->
-                    <script src="https://www.paypal.com/sdk/js?client-id=&currency=USD" data-sdk-integration-source="button-factory"></script>
+                    <script src="https://www.paypal.com/sdk/js?client-id=" data-sdk-integration-source="button-factory"></script>
 
             </div>
             <!-- <%-- right side box ends here --%> -->
