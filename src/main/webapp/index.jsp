@@ -43,23 +43,23 @@
       </a>
     </div>
 
-    <%--navbar links--%>
-    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-      <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
-        <li>
-          <a href="/index.jsp" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">Home</a>
-        </li>
-        <li>
-          <a href="/vegetables.jsp" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Vegetables</a>
-        </li>
-        <li>
-          <a href="/fruits.jsp" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Fruits</a>
-        </li>
-        <li>
-          <a href="/shop.jsp" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Shop</a>
-        </li>
-      </ul>
-    </div>
+      <%--navbar links--%>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white">
+          <li>
+            <a href="/index.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded md:text-blue-700 md:bg-transparent md:p-0">Home</a>
+          </li>
+          <li>
+            <a href="/vegetables.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 ">Vegetables</a>
+          </li>
+          <li>
+            <a href="/fruits.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Fruits</a>
+          </li>
+          <li>
+            <a href="/shop.jsp" class="block font-bold text-lg py-2 pl-3 pr-4 text-[#044A48] rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">Shop</a>
+          </li>
+        </ul>
+      </div>
   </div>
 </nav>
 <%--Navbar code ends here--%>
@@ -409,7 +409,7 @@
             <li class="mb-4">
               <a href="/vegetables.jsp" class="hover:underline">Vegetables</a>
             </li>
-            <li class="mb-4">
+            <li>
               <a href="/cart.jsp" class="hover:underline">Cart</a>
             </li>
           </ul>
@@ -429,7 +429,7 @@
             <li class="mb-4">
               <a href="https://github.com/themesberg/flowbite" class="hover:underline ">LinkedIn</a>
             </li>
-            <li class="mb-4">
+            <li>
               <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Tiktok</a>
             </li>
           </ul>
@@ -489,5 +489,30 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.0.0/flowbite.min.js"></script>
+
+<script>
+  // adding products to the cart
+  function addToCart(productId) {
+    // Get existing cart items or initialize an empty array
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+
+    // Check if the product ID is already in the cart
+    const existingItem = cartItems.find(item => item.productId === productId);
+
+    if (existingItem) {
+      // Increment the quantity if the product is already in the cart
+      existingItem.quantity++;
+    } else {
+      // Add the new product to the cart with quantity 1
+      cartItems.push({ productId, quantity: 1 });
+    }
+
+    // Update the cart in localStorage
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+
+    // Provide feedback to the user (optional)
+    // alert("Product added to cart!");
+  }
+</script>
 </body>
 </html>
