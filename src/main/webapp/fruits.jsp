@@ -76,7 +76,7 @@
 
 
 <%--Product cards start here--%>
-<div id="product-container" class="grid grid-cols-4 mx-20 gap-10">
+<div id="product-container" class="grid grid-cols-4 mx-20 mb-20 gap-10">
     <!-- Product cards will be added inside this -->
 </div>
 
