@@ -62,7 +62,7 @@
 </nav>
 <%--Navbar code ends here--%>
 
-<!-- <%--login form starts here--%> -->
+<!-- <%--payment form starts here--%> -->
 <div class="py-8">
     <div class="container mx-auto z-10">
         <div class="flex flex-col lg:flex-row w-10/12 lg:w-8/12 bg-white rounded-xl mx-auto shadow-lg overflow-hidden">
@@ -91,7 +91,7 @@
                     </div>
 
                     <!-- Add the PayPal Smart Payment Button script -->
-                    <script src="https://www.paypal.com/sdk/js?client-id=" data-sdk-integration-source="button-factory"></script>
+                    <script src="https://www.paypal.com/sdk/js?client-id=ASGNcI2pf8ZCQRXGpPvuCwMSk3-dzbrQmyd23tnQuHPA0UtQuhPsb7rlETWGkfUAdm5Ip0E1AFDHhD01&currency=USD" data-sdk-integration-source="button-factory"></script>
 
             </div>
             <!-- <%-- right side box ends here --%> -->
@@ -103,13 +103,14 @@
     <!-- Add the PayPal Smart Payment Button -->
     <script>
         const retrievedTotalBillAmount = localStorage.getItem('payment');
+        const billAmountInRS = (retrievedTotalBillAmount / 325).toFixed(2);
         paypal.Buttons({
             createOrder: function(data, actions) {
                 // Set up the transaction details
                 return actions.order.create({
                     purchase_units: [{
                         amount: {
-                            value: retrievedTotalBillAmount // Set the amount based on your checkout total
+                            value: billAmountInRS // Set the amount based on your checkout total
                         }
                     }]
                 });

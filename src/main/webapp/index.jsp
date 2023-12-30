@@ -168,17 +168,17 @@
         <div class="flex flex-col items-center">
           <i class="fa-solid fa-truck fa-3x mb-5" style="color: #ffffff; height: 50px;"></i>
           <h1 class="text-white font-medium text-2xl mb-3">On time delivery</h1>
-          <p class="text-white">lorem, sdas asd asd asd asd asdafsdfg dg d</p>
+          <p class="text-white">Count on us for timely, hassle-free deliveries.</p>
         </div>
         <div class="flex flex-col items-center">
           <i class="fa-solid fa-leaf fa-3x mb-5" style="color: #ffffff; height: 50px;"></i>
           <h1 class="text-white font-medium text-2xl mb-3">100% Organic Products</h1>
-          <p class="text-white">lorem, sdas asd asd asd asd asdafsdfg dg d</p>
+          <p class="text-white">Pure goodness: Our products are 100% organic</p>
         </div>
         <div class="flex flex-col items-center">
           <i class="fa-solid fa-dollar-sign fa-3x mb-5" style="color: #ffffff; height: 50px;"></i>
           <h1 class="text-white font-medium text-2xl mb-3">Lowest Price & Discounts</h1>
-          <p class="text-white">lorem, sdas asd asd asd asd asdafsdfg dg d</p>
+          <p class="text-white">Smart savings, unbeatable value</p>
         </div>
       </div>
   </div>

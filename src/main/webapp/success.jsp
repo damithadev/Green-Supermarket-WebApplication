@@ -26,10 +26,18 @@
         </div>
         <div class="text-center">
             <h3 class="md:text-2xl text-base text-gray-900 font-semibold text-center">Payment Done!</h3>
-            <p class="text-gray-600 mt-10 my-2">Your order has been placed successfully.</p>
-            <p class="text-gray-600"> We are working on it!  </p>
+            <p class="text-gray-600 mt-10 my-2"></p>
+<%--            <p class="text-gray-600"> We are working on it!  </p>--%>
 
-            <button type="submit" class="my-8 mt-14 bg-[#99CC33] text-white hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-8 py-2.5 text-center">Redirect to Home</button>
+            <form action="/addReview" method="post">
+
+            <div class="flex flex-col items-center">
+                <label for="message" class="w-3/6 text-justify block mb-8 text-gray-600">Your order has been placed successfully. We're already hard at work to ensure everything is perfect.  We'd love to hear about your experience with the order placing process. Feel free to share any suggestions you have. Your feedback helps us enhance your shopping journey.</label>
+                <textarea id="message" name="review" rows="4" class="block p-2.5 w-3/6 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-" required placeholder="Write your thoughts here..."></textarea>
+            </div>
+            <button type="submit" class="my-8 mt-14 bg-[#99CC33] text-white hover:bg-primary-700 font-medium rounded-lg text-sm px-8 py-2.5 text-center">Submit</button>
+
+            </form>
         </div>
     </div>
 </div>

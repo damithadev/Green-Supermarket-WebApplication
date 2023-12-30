@@ -11,22 +11,22 @@ public class EmailSender {
     public static void sendEmail(String recipientEmail, String subject, String messageBody) throws Exception {
         // Configure email properties
         Properties properties = new Properties();
-        properties.put("mail.smtp.host", "smtp.gmail.com"); // Replace with your SMTP server address
-        properties.put("mail.smtp.port", "587"); // Replace with your SMTP port
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
         properties.put("mail.smtp.auth", "true");
-        properties.put("mail.smtp.starttls.enable", "true"); // For TLS
+        properties.put("mail.smtp.starttls.enable", "true");
 
         // Create an email session
         Session session = Session.getInstance(properties, new Authenticator() {
             protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-                return new javax.mail.PasswordAuthentication("techpulselk@gmail.com", "");
+                return new javax.mail.PasswordAuthentication("techpulselk@gmail.com", "ksqkaclwruuduxol");
             }
         });
 
         try {
             // Create a message
             Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress("techpulselk@gmail.com")); // Replace with your email
+            message.setFrom(new InternetAddress("techpulselk@gmail.com"));
             message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(recipientEmail));
             message.setSubject(subject);
             message.setText(messageBody);
