@@ -19,7 +19,7 @@ public class EmailSender {
         // Create an email session
         Session session = Session.getInstance(properties, new Authenticator() {
             protected javax.mail.PasswordAuthentication getPasswordAuthentication() {
-                return new javax.mail.PasswordAuthentication("techpulselk@gmail.com", "ksqkaclwruuduxol");
+                return new javax.mail.PasswordAuthentication("techpulselk@gmail.com", "");
             }
         });
 
