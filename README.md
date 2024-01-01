@@ -47,3 +47,23 @@ Video Demonstration: [Green Supermarket](https://youtu.be/JWyT6T8ESxc)<br/>
 <h4>Payment Success Page</h4>
 
 ![localhost_8090_success jsp](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/3db14268-dd17-4aff-b651-b9fb95f8d0d2)
+<br> <br>
+<h4>My Account Page</h4>
+
+![localhost_8090_myaccount](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/209f7574-6d3a-4472-bb1b-05f9cba73715)
+<br> <br>
+<h4>Orders Page</h4>
+
+![localhost_8090_myaccount (1)](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/c70ae95c-1de6-4461-877e-13f72a9062e9)
+<br> <br>
+<h4>Account Details Page</h4>
+
+![localhost_8090_myaccount (2)](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/e426d0bf-a7e5-40be-89ee-c7e89b78cfd7)
+<br> <br>
+<h4>Delivery Address Page</h4>
+
+![localhost_8090_myaccount (3)](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/549f476c-5079-4be0-9818-a253868028d2)
+<br> <br>
+<h4>Wishlist Page</h4>
+
+![localhost_8090_myaccount (4)](https://github.com/damithadev/Green-Supermarket-WebApplication/assets/104585591/d2a8770e-54f9-4d45-9d3a-e86ae3fe6196)
