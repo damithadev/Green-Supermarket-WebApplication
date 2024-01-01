@@ -9,4 +9,4 @@ This is a [Java](https://www.oracle.com/java/) Web Application project created w
 - Tomcat Version - [10.1.13](https://drive.google.com/file/d/1zO0vtSOtE-Y8NHQbLVx8MWzkZV8a1Blf/view?usp=sharing)
 - Database - [MySQL](https://www.mysql.com/)
 
-Video Demonstration: <a href="https://youtu.be/JWyT6T8ESxc">![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)</a><br/>
+Video Demonstration: [Green Supermarket](https://youtu.be/JWyT6T8ESxc)<br/>
